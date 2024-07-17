@@ -1,0 +1,2061 @@
+SQL> create table Student(sno varchar(15) primary key,sname varchar(20),branch varchar(5),gender varchar(5),age number,check(age>18);
+create table Student(sno varchar(15) primary key,sname varchar(20),branch varchar(5),gender varchar(5),age number,check(age>18)
+                                                                                                                              *
+ERROR at line 1:
+ORA-00907: missing right parenthesis 
+
+
+SQL> create table Student(sno varchar(15) primary key,sname varchar(20),branch varchar(5),gender varchar(5),age number,check(age>18));
+create table Student(sno varchar(15) primary key,sname varchar(20),branch varchar(5),gender varchar(5),age number,check(age>18))
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> create table cse(sno varchar(15) primary key,sname varchar(20),branch varchar(5),gender varchar(5),age number,check(age>18));
+
+Table created.
+
+SQL> insert into cse values(21311A0501,S.Niteesh,CSE,M,19);
+insert into cse values(21311A0501,S.Niteesh,CSE,M,19)
+                            *
+ERROR at line 1:
+ORA-00917: missing comma 
+
+
+SQL> insert into cse values('21311A0501','S.Niteesh','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0502','P.Varshith','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0503','A.ShivaRam','CSE','M',18);
+insert into cse values('21311A0503','A.ShivaRam','CSE','M',18)
+*
+ERROR at line 1:
+ORA-02290: check constraint (SYSTEM.SYS_C004445) violated 
+
+
+SQL> insert into cse values('21311A0503','A.ShivaRam','CSE','M',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0504','Sk.Khasim','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0505','P.Saikrishna','CSE','M',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0506','G.Venkat Aditya','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0507','T.Sai Deekshith','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0508','P.Rajeswari','CSE','F',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0509','P.Shashank','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A05010','A.Vikas','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A05011','V.Nikelsh','CSE','M',22);
+
+1 row created.
+
+SQL> insert into cse values('21311A05012','A.Jithendhar','CSE','M',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A05013','K.Giridhar','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A05014','L.Akhila','CSE','F',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A05014','K.Prakash','CSE','M',20);
+insert into cse values('21311A05014','K.Prakash','CSE','M',20)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (SYSTEM.SYS_C004446) violated 
+
+
+SQL> insert into cse values('21311A0515','K.Prakash','CSE','M',20);
+
+1 row created.
+
+SQL> delete from cse where sno=21311A05010;
+delete from cse where sno=21311A05010
+                               *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> delete from cse where sno='21311A05010';
+
+1 row deleted.
+
+SQL> delete from cse where sno='21311A05011';
+
+1 row deleted.
+
+SQL> delete from cse where sno='21311A05012';
+
+1 row deleted.
+
+SQL> delete from cse where sno='21311A05013';
+
+1 row deleted.
+
+SQL> delete from cse where sno='21311A05014';
+
+1 row deleted.
+
+SQL> delete from cse where sno='21311A0515';;
+delete from cse where sno='21311A0515';
+                                      *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+SQL> delete from cse where sno='21311A0515';
+
+1 row deleted.
+
+SQL> select * from cse;
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0501      S.Niteesh            CSE   M             19                     
+21311A0502      P.Varshith           CSE   M             19                     
+21311A0503      A.ShivaRam           CSE   M             20                     
+21311A0504      Sk.Khasim            CSE   M             19                     
+21311A0505      P.Saikrishna         CSE   M             21                     
+21311A0506      G.Venkat Aditya      CSE   M             19                     
+21311A0507      T.Sai Deekshith      CSE   M             19                     
+21311A0508      P.Rajeswari          CSE   F             19                     
+21311A0509      P.Shashank           CSE   M             19                     
+
+9 rows selected.
+
+SQL> insert into cse values('21311A0510','A.Vikas','CSE','M',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0511','V.Nikelsh','CSE','M',22);
+
+1 row created.
+
+SQL> insert into cse values('21311A0512','A.Jithendhar','CSE','M',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0513','K.Giridhar','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0514','L.Akhila','CSE','F',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0515','K.Prakash','CSE','M',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0516','A.Madhavi','CSE','F',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0517','B.Showarya Akash','CSE','M',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0518','N.Deepika','CSE','F',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0519','K.Pranitha','CSE','F',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0520','S.Shruthi','CSE','F',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0521','M.Shiva','CSE','F',22);
+
+1 row created.
+
+SQL> insert into cse values('21311A0522','R.Laxmi Priya','CSE','F',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0523','K.Harshini','CSE','F',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0524','B.Sowmya','CSE','F',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0525','M.Lokesh','CSE','F',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0526','R.Umesh','CSE','M',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0527','M.Rohan Babu','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0528','P.Siddhu','CSE','M',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0529','P.Navya Sree','CSE','M',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0530','C.Sarvendhri','CSE','F',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0531','P.Praveena','CSE','F',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0532','G.Rathan Raju','CSE','M',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0532','Sk.Huda Muskan','CSE','F',21);
+insert into cse values('21311A0532','Sk.Huda Muskan','CSE','F',21)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (SYSTEM.SYS_C004446) violated 
+
+
+SQL> insert into cse values('21311A0533','Sk.Huda Muskan','CSE','F',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0534','Md.Awiz','CSE','M',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0535','Md.Mahek','CSE','F',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0536','B.Manjula','CSE','F',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0537','B.Pooja','CSE','F',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0538','J.Aaraadhya','CSE','F',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0539','P.Taruni Neha','CSE','F',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0540','A.Anvitha','CSE','F',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0541','V.Dhanush','CSE','M',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0542','Y.Vibhas','CSE','M',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0543','S.Meghana','CSE','F',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0544','O.Shiva Ganesh','CSE','M',22);
+
+1 row created.
+
+SQL> insert into cse values('21311A0545','R.Ritheesh Reddy','CSE','M',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0546','T.Aditi','CSE','F',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0547','G.Sathvik Reddy','CSE','M',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0548','M.Rishab','CSE','M',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0549','T.Shivani','CSE','F',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0550','A.Vyshanvi','CSE','F',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0551','J.Sai Akshya','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0552','T.Chandhu','CSE','M',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0553','K.Jayanth','CSE','M',22);
+
+1 row created.
+
+SQL> insert into cse values('21311A0554','A.Sainath','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0555','B.Snigdha Reddy','CSE','F',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0556','P.Nithin','CSE','M',22);
+
+1 row created.
+
+SQL> insert into cse values('21311A0557','B.Charkika','CSE','M',23);
+
+1 row created.
+
+SQL> insert into cse values('21311A0558','D.Veekshitha','CSE','F',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0559','Ch.Abhinay','CSE','M',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0560','M.Tharun Vibhav','CSE','M',21);
+
+1 row created.
+
+SQL> insert into cse values('21311A0561','P.Tejas','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0562','K.Vinay','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0563','P.Aditya Raj','CSE','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21311A0564','V.Gautham','CSE','M',20);
+
+1 row created.
+
+SQL> insert into cse values('21311A0565','P.Mahendhar','CSE','M',21);
+
+1 row created.
+
+SQL> select * from cse;
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0501      S.Niteesh            CSE   M             19                     
+21311A0502      P.Varshith           CSE   M             19                     
+21311A0503      A.ShivaRam           CSE   M             20                     
+21311A0504      Sk.Khasim            CSE   M             19                     
+21311A0505      P.Saikrishna         CSE   M             21                     
+21311A0506      G.Venkat Aditya      CSE   M             19                     
+21311A0507      T.Sai Deekshith      CSE   M             19                     
+21311A0508      P.Rajeswari          CSE   F             19                     
+21311A0509      P.Shashank           CSE   M             19                     
+21311A0510      A.Vikas              CSE   M             20                     
+21311A0511      V.Nikelsh            CSE   M             22                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0512      A.Jithendhar         CSE   M             20                     
+21311A0513      K.Giridhar           CSE   M             19                     
+21311A0514      L.Akhila             CSE   F             21                     
+21311A0515      K.Prakash            CSE   M             21                     
+21311A0516      A.Madhavi            CSE   F             20                     
+21311A0517      B.Showarya Akash     CSE   M             21                     
+21311A0518      N.Deepika            CSE   F             19                     
+21311A0519      K.Pranitha           CSE   F             20                     
+21311A0520      S.Shruthi            CSE   F             21                     
+21311A0521      M.Shiva              CSE   F             22                     
+21311A0522      R.Laxmi Priya        CSE   F             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0523      K.Harshini           CSE   F             19                     
+21311A0524      B.Sowmya             CSE   F             20                     
+21311A0525      M.Lokesh             CSE   F             21                     
+21311A0526      R.Umesh              CSE   M             21                     
+21311A0527      M.Rohan Babu         CSE   M             19                     
+21311A0528      P.Siddhu             CSE   M             20                     
+21311A0529      P.Navya Sree         CSE   M             21                     
+21311A0530      C.Sarvendhri         CSE   F             19                     
+21311A0531      P.Praveena           CSE   F             20                     
+21311A0532      G.Rathan Raju        CSE   M             20                     
+21311A0533      Sk.Huda Muskan       CSE   F             21                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0534      Md.Awiz              CSE   M             21                     
+21311A0535      Md.Mahek             CSE   F             20                     
+21311A0536      B.Manjula            CSE   F             21                     
+21311A0537      B.Pooja              CSE   F             21                     
+21311A0538      J.Aaraadhya          CSE   F             19                     
+21311A0539      P.Taruni Neha        CSE   F             19                     
+21311A0540      A.Anvitha            CSE   F             21                     
+21311A0541      V.Dhanush            CSE   M             21                     
+21311A0542      Y.Vibhas             CSE   M             20                     
+21311A0543      S.Meghana            CSE   F             21                     
+21311A0544      O.Shiva Ganesh       CSE   M             22                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0545      R.Ritheesh Reddy     CSE   M             21                     
+21311A0546      T.Aditi              CSE   F             19                     
+21311A0547      G.Sathvik Reddy      CSE   M             21                     
+21311A0548      M.Rishab             CSE   M             20                     
+21311A0549      T.Shivani            CSE   F             21                     
+21311A0550      A.Vyshanvi           CSE   F             20                     
+21311A0551      J.Sai Akshya         CSE   M             19                     
+21311A0552      T.Chandhu            CSE   M             21                     
+21311A0553      K.Jayanth            CSE   M             22                     
+21311A0554      A.Sainath            CSE   M             19                     
+21311A0555      B.Snigdha Reddy      CSE   F             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0556      P.Nithin             CSE   M             22                     
+21311A0557      B.Charkika           CSE   M             23                     
+21311A0558      D.Veekshitha         CSE   F             20                     
+21311A0559      Ch.Abhinay           CSE   M             20                     
+21311A0560      M.Tharun Vibhav      CSE   M             21                     
+21311A0561      P.Tejas              CSE   M             19                     
+21311A0562      K.Vinay              CSE   M             19                     
+21311A0563      P.Aditya Raj         CSE   M             19                     
+21311A0564      V.Gautham            CSE   M             20                     
+21311A0565      P.Mahendhar          CSE   M             21                     
+
+65 rows selected.
+
+SQL> insert into cse values('21311A0565','M.Pavan','CSE-LE','M',20);
+insert into cse values('21311A0565','M.Pavan','CSE-LE','M',20)
+                                              *
+ERROR at line 1:
+ORA-12899: value too large for column "SYSTEM"."CSE"."BRANCH" (actual: 6, 
+maximum: 5) 
+
+
+SQL> insert into cse values('21311A0565','M.Pavan','CSE LE','M',20);
+insert into cse values('21311A0565','M.Pavan','CSE LE','M',20)
+                                              *
+ERROR at line 1:
+ORA-12899: value too large for column "SYSTEM"."CSE"."BRANCH" (actual: 6, 
+maximum: 5) 
+
+
+SQL> insert into cse values('21311A0565','M.Pavan','CSELE','M',20);
+insert into cse values('21311A0565','M.Pavan','CSELE','M',20)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (SYSTEM.SYS_C004446) violated 
+
+
+SQL> insert into cse values('22315A0501','M.Pavan','CSELE','M',20);
+
+1 row created.
+
+SQL> insert into cse values('22315A0502','K.Sanjay','CSELE','M',22);
+
+1 row created.
+
+SQL> insert into cse values('22315A0503','R.Navya Sree','CSELE','F',20);
+
+1 row created.
+
+SQL> insert into cse values('22315A0504','Y.Jaya Sree','CSELE','F',20);
+
+1 row created.
+
+SQL> delete from cse where sn='22315A0504';
+delete from cse where sn='22315A0504'
+                      *
+ERROR at line 1:
+ORA-00904: "SN": invalid identifier 
+
+
+SQL> delete from cse where sno='22315A0504';
+
+1 row deleted.
+
+SQL> insert into cse values('22315A0505','Y.Jaya Sree','CSELE','F',20);
+
+1 row created.
+
+SQL> select * from cse;
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0501      S.Niteesh            CSE   M             19                     
+21311A0502      P.Varshith           CSE   M             19                     
+21311A0503      A.ShivaRam           CSE   M             20                     
+21311A0504      Sk.Khasim            CSE   M             19                     
+21311A0505      P.Saikrishna         CSE   M             21                     
+21311A0506      G.Venkat Aditya      CSE   M             19                     
+21311A0507      T.Sai Deekshith      CSE   M             19                     
+21311A0508      P.Rajeswari          CSE   F             19                     
+21311A0509      P.Shashank           CSE   M             19                     
+21311A0510      A.Vikas              CSE   M             20                     
+21311A0511      V.Nikelsh            CSE   M             22                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0512      A.Jithendhar         CSE   M             20                     
+21311A0513      K.Giridhar           CSE   M             19                     
+21311A0514      L.Akhila             CSE   F             21                     
+21311A0515      K.Prakash            CSE   M             21                     
+21311A0516      A.Madhavi            CSE   F             20                     
+21311A0517      B.Showarya Akash     CSE   M             21                     
+21311A0518      N.Deepika            CSE   F             19                     
+21311A0519      K.Pranitha           CSE   F             20                     
+21311A0520      S.Shruthi            CSE   F             21                     
+21311A0521      M.Shiva              CSE   F             22                     
+21311A0522      R.Laxmi Priya        CSE   F             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0523      K.Harshini           CSE   F             19                     
+21311A0524      B.Sowmya             CSE   F             20                     
+21311A0525      M.Lokesh             CSE   F             21                     
+21311A0526      R.Umesh              CSE   M             21                     
+21311A0527      M.Rohan Babu         CSE   M             19                     
+21311A0528      P.Siddhu             CSE   M             20                     
+21311A0529      P.Navya Sree         CSE   M             21                     
+21311A0530      C.Sarvendhri         CSE   F             19                     
+21311A0531      P.Praveena           CSE   F             20                     
+21311A0532      G.Rathan Raju        CSE   M             20                     
+21311A0533      Sk.Huda Muskan       CSE   F             21                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0534      Md.Awiz              CSE   M             21                     
+21311A0535      Md.Mahek             CSE   F             20                     
+21311A0536      B.Manjula            CSE   F             21                     
+21311A0537      B.Pooja              CSE   F             21                     
+21311A0538      J.Aaraadhya          CSE   F             19                     
+21311A0539      P.Taruni Neha        CSE   F             19                     
+21311A0540      A.Anvitha            CSE   F             21                     
+21311A0541      V.Dhanush            CSE   M             21                     
+21311A0542      Y.Vibhas             CSE   M             20                     
+21311A0543      S.Meghana            CSE   F             21                     
+21311A0544      O.Shiva Ganesh       CSE   M             22                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0545      R.Ritheesh Reddy     CSE   M             21                     
+21311A0546      T.Aditi              CSE   F             19                     
+21311A0547      G.Sathvik Reddy      CSE   M             21                     
+21311A0548      M.Rishab             CSE   M             20                     
+21311A0549      T.Shivani            CSE   F             21                     
+21311A0550      A.Vyshanvi           CSE   F             20                     
+21311A0551      J.Sai Akshya         CSE   M             19                     
+21311A0552      T.Chandhu            CSE   M             21                     
+21311A0553      K.Jayanth            CSE   M             22                     
+21311A0554      A.Sainath            CSE   M             19                     
+21311A0555      B.Snigdha Reddy      CSE   F             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0556      P.Nithin             CSE   M             22                     
+21311A0557      B.Charkika           CSE   M             23                     
+21311A0558      D.Veekshitha         CSE   F             20                     
+21311A0559      Ch.Abhinay           CSE   M             20                     
+21311A0560      M.Tharun Vibhav      CSE   M             21                     
+21311A0561      P.Tejas              CSE   M             19                     
+21311A0562      K.Vinay              CSE   M             19                     
+21311A0563      P.Aditya Raj         CSE   M             19                     
+21311A0564      V.Gautham            CSE   M             20                     
+21311A0565      P.Mahendhar          CSE   M             21                     
+22315A0501      M.Pavan              CSELE M             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+22315A0502      K.Sanjay             CSELE M             22                     
+22315A0503      R.Navya Sree         CSELE F             20                     
+22315A0505      Y.Jaya Sree          CSELE F             20                     
+
+69 rows selected.
+
+SQL> delete from cse where sno='22315A0505';
+
+1 row deleted.
+
+SQL> insert into cse values('22315A0504','P.Muralidhar Reddy','CSELE','M',20);
+
+1 row created.
+
+SQL> insert into cse values('22315A0505','Y.Jaya Sree','CSELE','F',20);
+
+1 row created.
+
+SQL> select * from cse;
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0501      S.Niteesh            CSE   M             19                     
+21311A0502      P.Varshith           CSE   M             19                     
+21311A0503      A.ShivaRam           CSE   M             20                     
+21311A0504      Sk.Khasim            CSE   M             19                     
+21311A0505      P.Saikrishna         CSE   M             21                     
+21311A0506      G.Venkat Aditya      CSE   M             19                     
+21311A0507      T.Sai Deekshith      CSE   M             19                     
+21311A0508      P.Rajeswari          CSE   F             19                     
+21311A0509      P.Shashank           CSE   M             19                     
+21311A0510      A.Vikas              CSE   M             20                     
+21311A0511      V.Nikelsh            CSE   M             22                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0512      A.Jithendhar         CSE   M             20                     
+21311A0513      K.Giridhar           CSE   M             19                     
+21311A0514      L.Akhila             CSE   F             21                     
+21311A0515      K.Prakash            CSE   M             21                     
+21311A0516      A.Madhavi            CSE   F             20                     
+21311A0517      B.Showarya Akash     CSE   M             21                     
+21311A0518      N.Deepika            CSE   F             19                     
+21311A0519      K.Pranitha           CSE   F             20                     
+21311A0520      S.Shruthi            CSE   F             21                     
+21311A0521      M.Shiva              CSE   F             22                     
+21311A0522      R.Laxmi Priya        CSE   F             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0523      K.Harshini           CSE   F             19                     
+21311A0524      B.Sowmya             CSE   F             20                     
+21311A0525      M.Lokesh             CSE   F             21                     
+21311A0526      R.Umesh              CSE   M             21                     
+21311A0527      M.Rohan Babu         CSE   M             19                     
+21311A0528      P.Siddhu             CSE   M             20                     
+21311A0529      P.Navya Sree         CSE   M             21                     
+21311A0530      C.Sarvendhri         CSE   F             19                     
+21311A0531      P.Praveena           CSE   F             20                     
+21311A0532      G.Rathan Raju        CSE   M             20                     
+21311A0533      Sk.Huda Muskan       CSE   F             21                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0534      Md.Awiz              CSE   M             21                     
+21311A0535      Md.Mahek             CSE   F             20                     
+21311A0536      B.Manjula            CSE   F             21                     
+21311A0537      B.Pooja              CSE   F             21                     
+21311A0538      J.Aaraadhya          CSE   F             19                     
+21311A0539      P.Taruni Neha        CSE   F             19                     
+21311A0540      A.Anvitha            CSE   F             21                     
+21311A0541      V.Dhanush            CSE   M             21                     
+21311A0542      Y.Vibhas             CSE   M             20                     
+21311A0543      S.Meghana            CSE   F             21                     
+21311A0544      O.Shiva Ganesh       CSE   M             22                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0545      R.Ritheesh Reddy     CSE   M             21                     
+21311A0546      T.Aditi              CSE   F             19                     
+21311A0547      G.Sathvik Reddy      CSE   M             21                     
+21311A0548      M.Rishab             CSE   M             20                     
+21311A0549      T.Shivani            CSE   F             21                     
+21311A0550      A.Vyshanvi           CSE   F             20                     
+21311A0551      J.Sai Akshya         CSE   M             19                     
+21311A0552      T.Chandhu            CSE   M             21                     
+21311A0553      K.Jayanth            CSE   M             22                     
+21311A0554      A.Sainath            CSE   M             19                     
+21311A0555      B.Snigdha Reddy      CSE   F             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0556      P.Nithin             CSE   M             22                     
+21311A0557      B.Charkika           CSE   M             23                     
+21311A0558      D.Veekshitha         CSE   F             20                     
+21311A0559      Ch.Abhinay           CSE   M             20                     
+21311A0560      M.Tharun Vibhav      CSE   M             21                     
+21311A0561      P.Tejas              CSE   M             19                     
+21311A0562      K.Vinay              CSE   M             19                     
+21311A0563      P.Aditya Raj         CSE   M             19                     
+21311A0564      V.Gautham            CSE   M             20                     
+21311A0565      P.Mahendhar          CSE   M             21                     
+22315A0501      M.Pavan              CSELE M             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+22315A0502      K.Sanjay             CSELE M             22                     
+22315A0503      R.Navya Sree         CSELE F             20                     
+22315A0504      P.Muralidhar Reddy   CSELE M             20                     
+22315A0505      Y.Jaya Sree          CSELE F             20                     
+
+70 rows selected.
+
+SQL> insert into cse values('21861A0519','O.Vinayak','CSETF','M',19);
+
+1 row created.
+
+SQL> insert into cse values('21861A0555','V.Rithika','CSETF','F',22);
+
+1 row created.
+
+SQL> insert into cse values('21861A0551','V.Shiva Prasad','CSETF','M',21);
+
+1 row created.
+
+SQL> create table edu(sno varchar(10) primary key,SGPA number(2,1),CGPA number(2,1),backlogs varchar(10),attendance(%) number(2,1),detained varchar(10),Extra-circular acctivities varchar(10));
+create table edu(sno varchar(10) primary key,SGPA number(2,1),CGPA number(2,1),backlogs varchar(10),attendance(%) number(2,1),detained varchar(10),Extra-circular acctivities varchar(10))
+                                                                                                              *
+ERROR at line 1:
+ORA-00902: invalid datatype 
+
+
+SQL> create table edu(sno varchar(10) primary key,SGPA number(2,1),CGPA number(2,1),backlogs varchar(10),attendance in percent number(2,1),detained varchar(10),Extra-circular acctivities varchar(10));
+create table edu(sno varchar(10) primary key,SGPA number(2,1),CGPA number(2,1),backlogs varchar(10),attendance in percent number(2,1),detained varchar(10),Extra-circular acctivities varchar(10))
+                                                                                                               *
+ERROR at line 1:
+ORA-00902: invalid datatype 
+
+
+SQL> create table edu(sno varchar(10) primary key,SGPA number(2,1),CGPA number(2,1),backlogs varchar(10),attendance number(2,1),detained varchar(10),Extra-circular acctivities varchar(10));
+create table edu(sno varchar(10) primary key,SGPA number(2,1),CGPA number(2,1),backlogs varchar(10),attendance number(2,1),detained varchar(10),Extra-circular acctivities varchar(10))
+                                                                                                                                                     *
+ERROR at line 1:
+ORA-00902: invalid datatype 
+
+
+SQL> create table edu(sno varchar(10) primary key,SGPA number(2,1),CGPA number(2,1),backlogs varchar(10),attendance number(2,1),detained varchar(10),Extra-activities varchar(10));
+create table edu(sno varchar(10) primary key,SGPA number(2,1),CGPA number(2,1),backlogs varchar(10),attendance number(2,1),detained varchar(10),Extra-activities varchar(10))
+                                                                                                                                                     *
+ERROR at line 1:
+ORA-00902: invalid datatype 
+
+
+SQL> create table edu(sno varchar(10) primary key,SGPA number(2,1),CGPA number(2,1),backlogs varchar(10),attendance number(2,1),detained varchar(10),Extraactivities varchar(10));
+
+Table created.
+
+SQL> desc edu;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SNO                                       NOT NULL VARCHAR2(10)
+ SGPA                                               NUMBER(2,1)
+ CGPA                                               NUMBER(2,1)
+ BACKLOGS                                           VARCHAR2(10)
+ ATTENDANCE                                         NUMBER(2,1)
+ DETAINED                                           VARCHAR2(10)
+ EXTRAACTIVITIES                                    VARCHAR2(10)
+
+SQL> alter table drop(SGPA number(2,1));
+alter table drop(SGPA number(2,1))
+            *
+ERROR at line 1:
+ORA-00903: invalid table name 
+
+
+SQL> alter table edu drop(SGPA number(2,1));
+alter table edu drop(SGPA number(2,1))
+                          *
+ERROR at line 1:
+ORA-00907: missing right parenthesis 
+
+
+SQL> alter table edu drop(SGPA);
+
+Table altered.
+
+SQL> desc edu;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SNO                                       NOT NULL VARCHAR2(10)
+ CGPA                                               NUMBER(2,1)
+ BACKLOGS                                           VARCHAR2(10)
+ ATTENDANCE                                         NUMBER(2,1)
+ DETAINED                                           VARCHAR2(10)
+ EXTRAACTIVITIES                                    VARCHAR2(10)
+
+SQL> insert into edu values('21311A0501',9.5,'No',67.89,'No','Yes');
+insert into edu values('21311A0501',9.5,'No',67.89,'No','Yes')
+                                             *
+ERROR at line 1:
+ORA-01438: value larger than specified precision allowed for this column 
+
+
+SQL> insert into edu values('21311A0501',9.5,'No',67.8,'No','Yes');
+insert into edu values('21311A0501',9.5,'No',67.8,'No','Yes')
+                                             *
+ERROR at line 1:
+ORA-01438: value larger than specified precision allowed for this column 
+
+
+SQL> alter table edu modify(attendance number(10,2));
+
+Table altered.
+
+SQL> insert into edu values('21311A0501',9.5,'No',67.8,'No','Yes');
+
+1 row created.
+
+SQL> insert into edu values('21311A0502',8.5,'No',77.59,'No','No');
+
+1 row created.
+
+SQL> truncate table edu;
+
+Table truncated.
+
+SQL> desc edu;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SNO                                       NOT NULL VARCHAR2(10)
+ CGPA                                               NUMBER(2,1)
+ BACKLOGS                                           VARCHAR2(10)
+ ATTENDANCE                                         NUMBER(10,2)
+ DETAINED                                           VARCHAR2(10)
+ EXTRAACTIVITIES                                    VARCHAR2(10)
+
+SQL> select * from edu;
+
+no rows selected
+
+SQL> alter table edu add(cname varchar(10));
+
+Table altered.
+
+SQL> desc edu;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SNO                                       NOT NULL VARCHAR2(10)
+ CGPA                                               NUMBER(2,1)
+ BACKLOGS                                           VARCHAR2(10)
+ ATTENDANCE                                         NUMBER(10,2)
+ DETAINED                                           VARCHAR2(10)
+ EXTRAACTIVITIES                                    VARCHAR2(10)
+ CNAME                                              VARCHAR2(10)
+
+SQL> insert into edu values('21311A0501',9.5,'No',67.24,'No','Yes','ECA');
+
+1 row created.
+
+SQL> insert into edu values('21311A0502',8.5,'No',60.34,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0503',9.6,'No',77.59,'No','Yes','SDC');
+
+1 row created.
+
+SQL> insert into edu values('21311A0504',8.2,'No',67.24,'No','Yes','CNC');
+
+1 row created.
+
+SQL> insert into edu values('21311A0505',8.2,'No',63.67,'No','Yes','ECA');
+
+1 row created.
+
+SQL> insert into edu values('21311A0506',8.2,'Yes',44.83,'No','Yes','CDC');
+
+1 row created.
+
+SQL> insert into edu values('21311A0507',7.7,'No',53.45,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0508',9.4,'No',63.79,'No','Yes','CNC');
+
+1 row created.
+
+SQL> insert into edu values('21311A0509',6.4,'No',48.28,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0510',9.2,'No',53.48,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0511',8.8,'No',50.00,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0512',9.0,'No',67.24,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0513',8.6,'No',79.34,'No','Yes','ECA');
+
+1 row created.
+
+SQL> insert into edu values('21311A0514',8.9,'No',75.84,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0515',8.7,'No',48.28,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0516',9.7,'No',58.62,'No','Yes','ECA');
+
+1 row created.
+
+SQL> insert into edu values('21311A0517',8.4,'No',56.90,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0518',9.3,'No',70.69,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0519',8.5,'No',65.53,'No','Yes','DEVONEYS');
+
+1 row created.
+
+SQL> insert into edu values('21311A0520',9.5,'No',84.48,'No','Yes','ECA');
+
+1 row created.
+
+SQL> insert into edu values('21311A0521',9.1,'No',75.86,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0522',9.6,'No',82.76,'No','Yes','ECA');
+
+1 row created.
+
+SQL> insert into edu values('21311A0523',9.3,'No',82.76,'No','Yes','ECA');
+
+1 row created.
+
+SQL> insert into edu values('21311A0524',9.2,'No',70.69,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0525',8.7,'No',79.63,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0526',6.7,'Yes',29.31,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0527',8.4,'No',72.41,'No','Yes','CSAC');
+
+1 row created.
+
+SQL> insert into edu values('21311A0528',5.5,'Yes',0.00,'Yes','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0529',8.7,'No',29.31,'No','Yes','NSS');
+
+1 row created.
+
+SQL> insert into edu values('21311A0530',9.3,'No',58.63,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0531',9.6,'No',55.17,'No','Yes','ECA');
+
+1 row created.
+
+SQL> insert into edu values('21311A0532',7.6,'No',72.63,'No','Yes','NSS');
+
+1 row created.
+
+SQL> insert into edu values('21311A0533',8.4,'No',56.90','No','Yes','IEEE');
+ERROR:
+ORA-01756: quoted string not properly terminated 
+
+
+SQL> insert into edu values('21311A0533',8.4,'No',56.90,'No','Yes','IEEE');
+
+1 row created.
+
+SQL> insert into edu values('21311A0534',6.4,'Yes',44.78,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0535',6.8,'Yes',58.53,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0536',9.3,'No',84.48,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0537',8.3,'No',84.48,'No','Yes','ECA');
+
+1 row created.
+
+SQL> insert into edu values('21311A0538',8.5,'No',58.62,'No','Yes','BACHPAN PAYRS');
+insert into edu values('21311A0538',8.5,'No',58.62,'No','Yes','BACHPAN PAYRS')
+                                                              *
+ERROR at line 1:
+ORA-12899: value too large for column "SYSTEM"."EDU"."CNAME" (actual: 13, 
+maximum: 10) 
+
+
+SQL> insert into edu values('21311A0538',8.5,'No',58.62,'No','Yes','BACHPANPAYR');
+insert into edu values('21311A0538',8.5,'No',58.62,'No','Yes','BACHPANPAYR')
+                                                              *
+ERROR at line 1:
+ORA-12899: value too large for column "SYSTEM"."EDU"."CNAME" (actual: 11, 
+maximum: 10) 
+
+
+SQL> insert into edu values('21311A0538',8.5,'No',58.62,'No','Yes','BACHPNPYAR');
+
+1 row created.
+
+SQL> insert into edu values('21311A0539',8.2,'No',63.68,'No','Yes','IEEE');
+
+1 row created.
+
+SQL> insert into edu values('21311A0540',8.4,'No',48.28,'No','Yes','ARTS CLUB');
+
+1 row created.
+
+SQL> insert into edu values('21311A0542',7.4,'No',58.38,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0543',6.4,'No',68.08,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0544',7.8,'No',60.34,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0541',7.8,'No',60.34,'No','No',null);
+
+1 row created.
+
+SQL> delete from edu where sno='21311A0542';
+
+1 row deleted.
+
+SQL> delete from edu where sno='21311A0543';
+
+1 row deleted.
+
+SQL> delete from edu where sno='21311A0544';
+
+1 row deleted.
+
+SQL> select * from edu;
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0501        9.5 No              67.24 No         Yes        ECA           
+21311A0502        8.5 No              60.34 No         No                       
+21311A0503        9.6 No              77.59 No         Yes        SDC           
+21311A0504        8.2 No              67.24 No         Yes        CNC           
+21311A0505        8.2 No              63.67 No         Yes        ECA           
+21311A0506        8.2 Yes             44.83 No         Yes        CDC           
+21311A0507        7.7 No              53.45 No         No                       
+21311A0508        9.4 No              63.79 No         Yes        CNC           
+21311A0509        6.4 No              48.28 No         No                       
+21311A0510        9.2 No              53.48 No         No                       
+21311A0511        8.8 No                 50 No         No                       
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0512          9 No              67.24 No         No                       
+21311A0513        8.6 No              79.34 No         Yes        ECA           
+21311A0514        8.9 No              75.84 No         No                       
+21311A0515        8.7 No              48.28 No         No                       
+21311A0516        9.7 No              58.62 No         Yes        ECA           
+21311A0517        8.4 No               56.9 No         No                       
+21311A0518        9.3 No              70.69 No         No                       
+21311A0519        8.5 No              65.53 No         Yes        DEVONEYS      
+21311A0520        9.5 No              84.48 No         Yes        ECA           
+21311A0521        9.1 No              75.86 No         No                       
+21311A0522        9.6 No              82.76 No         Yes        ECA           
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0523        9.3 No              82.76 No         Yes        ECA           
+21311A0524        9.2 No              70.69 No         No                       
+21311A0525        8.7 No              79.63 No         No                       
+21311A0526        6.7 Yes             29.31 No         No                       
+21311A0527        8.4 No              72.41 No         Yes        CSAC          
+21311A0528        5.5 Yes                 0 Yes        No                       
+21311A0529        8.7 No              29.31 No         Yes        NSS           
+21311A0530        9.3 No              58.63 No         No                       
+21311A0531        9.6 No              55.17 No         Yes        ECA           
+21311A0532        7.6 No              72.63 No         Yes        NSS           
+21311A0533        8.4 No               56.9 No         Yes        IEEE          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0534        6.4 Yes             44.78 No         No                       
+21311A0535        6.8 Yes             58.53 No         No                       
+21311A0536        9.3 No              84.48 No         No                       
+21311A0537        8.3 No              84.48 No         Yes        ECA           
+21311A0538        8.5 No              58.62 No         Yes        BACHPNPYAR    
+21311A0539        8.2 No              63.68 No         Yes        IEEE          
+21311A0540        8.4 No              48.28 No         Yes        ARTS CLUB     
+21311A0541        7.8 No              60.34 No         No                       
+
+41 rows selected.
+
+SQL> insert into edu values('21311A0542',7.4,'No',58.38,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0543',6.4,'No',68.08,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0544',7.8,'No',60.34,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0545',7.1,'No',50.00,'No','No',null);
+
+1 row created.
+
+SQL> select * from edu;
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0501        9.5 No              67.24 No         Yes        ECA           
+21311A0502        8.5 No              60.34 No         No                       
+21311A0503        9.6 No              77.59 No         Yes        SDC           
+21311A0504        8.2 No              67.24 No         Yes        CNC           
+21311A0505        8.2 No              63.67 No         Yes        ECA           
+21311A0506        8.2 Yes             44.83 No         Yes        CDC           
+21311A0507        7.7 No              53.45 No         No                       
+21311A0508        9.4 No              63.79 No         Yes        CNC           
+21311A0509        6.4 No              48.28 No         No                       
+21311A0510        9.2 No              53.48 No         No                       
+21311A0511        8.8 No                 50 No         No                       
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0512          9 No              67.24 No         No                       
+21311A0513        8.6 No              79.34 No         Yes        ECA           
+21311A0514        8.9 No              75.84 No         No                       
+21311A0515        8.7 No              48.28 No         No                       
+21311A0516        9.7 No              58.62 No         Yes        ECA           
+21311A0517        8.4 No               56.9 No         No                       
+21311A0518        9.3 No              70.69 No         No                       
+21311A0519        8.5 No              65.53 No         Yes        DEVONEYS      
+21311A0520        9.5 No              84.48 No         Yes        ECA           
+21311A0521        9.1 No              75.86 No         No                       
+21311A0522        9.6 No              82.76 No         Yes        ECA           
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0523        9.3 No              82.76 No         Yes        ECA           
+21311A0524        9.2 No              70.69 No         No                       
+21311A0525        8.7 No              79.63 No         No                       
+21311A0526        6.7 Yes             29.31 No         No                       
+21311A0527        8.4 No              72.41 No         Yes        CSAC          
+21311A0528        5.5 Yes                 0 Yes        No                       
+21311A0529        8.7 No              29.31 No         Yes        NSS           
+21311A0530        9.3 No              58.63 No         No                       
+21311A0531        9.6 No              55.17 No         Yes        ECA           
+21311A0532        7.6 No              72.63 No         Yes        NSS           
+21311A0533        8.4 No               56.9 No         Yes        IEEE          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0534        6.4 Yes             44.78 No         No                       
+21311A0535        6.8 Yes             58.53 No         No                       
+21311A0536        9.3 No              84.48 No         No                       
+21311A0537        8.3 No              84.48 No         Yes        ECA           
+21311A0538        8.5 No              58.62 No         Yes        BACHPNPYAR    
+21311A0539        8.2 No              63.68 No         Yes        IEEE          
+21311A0540        8.4 No              48.28 No         Yes        ARTS CLUB     
+21311A0541        7.8 No              60.34 No         No                       
+21311A0542        7.4 No              58.38 No         No                       
+21311A0543        6.4 No              68.08 No         No                       
+21311A0544        7.8 No              60.34 No         No                       
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0545        7.1 No                 50 No         No                       
+
+45 rows selected.
+
+SQL> insert into edu values('21311A0546',6.4,'No',67.38,'No','Yes','IEEE');
+
+1 row created.
+
+SQL> insert into edu values('21311A0547',7.3,'Yes',67.34,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0548',7.7,'No',25.44,'No','Yes','SE');
+
+1 row created.
+
+SQL> insert into edu values('21311A0549',7.8,'No',68.97,'No','Yes','SCF');
+
+1 row created.
+
+SQL> insert into edu values('21311A0550',7.1,'No',55.17,'No','Yes','ARTS CLUB');
+
+1 row created.
+
+SQL> insert into edu values('21311A0551',6.8,'Yes',31.03,'No','Yes','SE');
+
+1 row created.
+
+SQL> insert into edu values('21311A0552',6.9,'Yes',51.04,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0553',7.2,'Yes',68.97,'No','Yes','SE');
+
+1 row created.
+
+SQL> insert into edu values('21311A0554',7.6,'No',50.00,'No','Yes','SE');
+
+1 row created.
+
+SQL> insert into edu values('21311A0555',7.0,'No',32.45,'No','Yes','ARTS CLUB');
+
+1 row created.
+
+SQL> insert into edu values('21311A0556',7.4,'No',27,94,'No','Yes','SE');
+insert into edu values('21311A0556',7.4,'No',27,94,'No','Yes','SE')
+            *
+ERROR at line 1:
+ORA-00913: too many values 
+
+
+SQL> insert into edu values('21311A0556',7.4,'No',27.94,'No','Yes','SE');
+
+1 row created.
+
+SQL> insert into edu values('21311A0557',6.1,'Yes',31.07,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0558',6.4,'Yes',62.07,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0559',5.4,'Yes',25.83,'Yes','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0560',6.4,'Yes',29.43,'Yes','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0561',6.8,'No',50.03,'No','Yes','SE');
+
+1 row created.
+
+SQL> insert into edu values('21311A0562',9.1,'No',55.15,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0561',6.1,'Yes',41.56,'No','No',null);
+insert into edu values('21311A0561',6.1,'Yes',41.56,'No','No',null)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (SYSTEM.SYS_C004447) violated 
+
+
+SQL> 
+SQL> insert into edu values('21311A0563',6.1,'Yes',41.56,'No','No',null);
+
+1 row created.
+
+SQL> insert into edu values('21311A0564',7.5,'No',39.66,'No','Yes','null');
+
+1 row created.
+
+SQL> select * from edu;
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0501        9.5 No              67.24 No         Yes        ECA           
+21311A0502        8.5 No              60.34 No         No                       
+21311A0503        9.6 No              77.59 No         Yes        SDC           
+21311A0504        8.2 No              67.24 No         Yes        CNC           
+21311A0505        8.2 No              63.67 No         Yes        ECA           
+21311A0506        8.2 Yes             44.83 No         Yes        CDC           
+21311A0507        7.7 No              53.45 No         No                       
+21311A0508        9.4 No              63.79 No         Yes        CNC           
+21311A0509        6.4 No              48.28 No         No                       
+21311A0510        9.2 No              53.48 No         No                       
+21311A0511        8.8 No                 50 No         No                       
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0512          9 No              67.24 No         No                       
+21311A0513        8.6 No              79.34 No         Yes        ECA           
+21311A0514        8.9 No              75.84 No         No                       
+21311A0515        8.7 No              48.28 No         No                       
+21311A0516        9.7 No              58.62 No         Yes        ECA           
+21311A0517        8.4 No               56.9 No         No                       
+21311A0518        9.3 No              70.69 No         No                       
+21311A0519        8.5 No              65.53 No         Yes        DEVONEYS      
+21311A0520        9.5 No              84.48 No         Yes        ECA           
+21311A0521        9.1 No              75.86 No         No                       
+21311A0522        9.6 No              82.76 No         Yes        ECA           
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0523        9.3 No              82.76 No         Yes        ECA           
+21311A0524        9.2 No              70.69 No         No                       
+21311A0525        8.7 No              79.63 No         No                       
+21311A0526        6.7 Yes             29.31 No         No                       
+21311A0527        8.4 No              72.41 No         Yes        CSAC          
+21311A0528        5.5 Yes                 0 Yes        No                       
+21311A0529        8.7 No              29.31 No         Yes        NSS           
+21311A0530        9.3 No              58.63 No         No                       
+21311A0531        9.6 No              55.17 No         Yes        ECA           
+21311A0532        7.6 No              72.63 No         Yes        NSS           
+21311A0533        8.4 No               56.9 No         Yes        IEEE          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0534        6.4 Yes             44.78 No         No                       
+21311A0535        6.8 Yes             58.53 No         No                       
+21311A0536        9.3 No              84.48 No         No                       
+21311A0537        8.3 No              84.48 No         Yes        ECA           
+21311A0538        8.5 No              58.62 No         Yes        BACHPNPYAR    
+21311A0539        8.2 No              63.68 No         Yes        IEEE          
+21311A0540        8.4 No              48.28 No         Yes        ARTS CLUB     
+21311A0541        7.8 No              60.34 No         No                       
+21311A0542        7.4 No              58.38 No         No                       
+21311A0543        6.4 No              68.08 No         No                       
+21311A0544        7.8 No              60.34 No         No                       
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0545        7.1 No                 50 No         No                       
+21311A0546        6.4 No              67.38 No         Yes        IEEE          
+21311A0547        7.3 Yes             67.34 No         No                       
+21311A0548        7.7 No              25.44 No         Yes        SE            
+21311A0549        7.8 No              68.97 No         Yes        SCF           
+21311A0550        7.1 No              55.17 No         Yes        ARTS CLUB     
+21311A0551        6.8 Yes             31.03 No         Yes        SE            
+21311A0552        6.9 Yes             51.04 No         No                       
+21311A0553        7.2 Yes             68.97 No         Yes        SE            
+21311A0554        7.6 No                 50 No         Yes        SE            
+21311A0555          7 No              32.45 No         Yes        ARTS CLUB     
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0556        7.4 No              27.94 No         Yes        SE            
+21311A0557        6.1 Yes             31.07 No         No                       
+21311A0558        6.4 Yes             62.07 No         No                       
+21311A0559        5.4 Yes             25.83 Yes        No                       
+21311A0560        6.4 Yes             29.43 Yes        No                       
+21311A0561        6.8 No              50.03 No         Yes        SE            
+21311A0562        9.1 No              55.15 No         No                       
+21311A0563        6.1 Yes             41.56 No         No                       
+21311A0564        7.5 No              39.66 No         Yes        null          
+
+64 rows selected.
+
+SQL> insert into edu values('21311A0565',5.5,'Yes',24.12,'No','No','null');
+
+1 row created.
+
+SQL> insert into edu values('22315A0501',6.5,'Yes',54.65,'No','Yes','SDC');
+
+1 row created.
+
+SQL> insert into edu values('22315A0502',6.7,'Yes',74.42,'No','Yes','SDC');
+
+1 row created.
+
+SQL> insert into edu values('22315A0503',7.7,'No',67.76,'No','No','NULL');
+
+1 row created.
+
+SQL> insert into edu values('22315A0504',8.4,'No',89.66,'No','No','NULL');
+
+1 row created.
+
+SQL> insert into edu values('22315A0505',7.9,'No',77.76,'No','No','NULL');
+
+1 row created.
+
+SQL> insert into edu values('21861A0519',7.9,'No',37.96,'No','No','NULL');
+
+1 row created.
+
+SQL> insert into edu values('21861A0555',6.9,'Yes',48.34,'No','Yes','SPC');
+
+1 row created.
+
+SQL> insert into edu values('21861A0551',6.2,'Yes',27.33,'No','Yes','ISTE');
+
+1 row created.
+
+SQL> select * from edu;
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0501        9.5 No              67.24 No         Yes        ECA           
+21311A0502        8.5 No              60.34 No         No                       
+21311A0503        9.6 No              77.59 No         Yes        SDC           
+21311A0504        8.2 No              67.24 No         Yes        CNC           
+21311A0505        8.2 No              63.67 No         Yes        ECA           
+21311A0506        8.2 Yes             44.83 No         Yes        CDC           
+21311A0507        7.7 No              53.45 No         No                       
+21311A0508        9.4 No              63.79 No         Yes        CNC           
+21311A0509        6.4 No              48.28 No         No                       
+21311A0510        9.2 No              53.48 No         No                       
+21311A0511        8.8 No                 50 No         No                       
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0512          9 No              67.24 No         No                       
+21311A0513        8.6 No              79.34 No         Yes        ECA           
+21311A0514        8.9 No              75.84 No         No                       
+21311A0515        8.7 No              48.28 No         No                       
+21311A0516        9.7 No              58.62 No         Yes        ECA           
+21311A0517        8.4 No               56.9 No         No                       
+21311A0518        9.3 No              70.69 No         No                       
+21311A0519        8.5 No              65.53 No         Yes        DEVONEYS      
+21311A0520        9.5 No              84.48 No         Yes        ECA           
+21311A0521        9.1 No              75.86 No         No                       
+21311A0522        9.6 No              82.76 No         Yes        ECA           
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0523        9.3 No              82.76 No         Yes        ECA           
+21311A0524        9.2 No              70.69 No         No                       
+21311A0525        8.7 No              79.63 No         No                       
+21311A0526        6.7 Yes             29.31 No         No                       
+21311A0527        8.4 No              72.41 No         Yes        CSAC          
+21311A0528        5.5 Yes                 0 Yes        No                       
+21311A0529        8.7 No              29.31 No         Yes        NSS           
+21311A0530        9.3 No              58.63 No         No                       
+21311A0531        9.6 No              55.17 No         Yes        ECA           
+21311A0532        7.6 No              72.63 No         Yes        NSS           
+21311A0533        8.4 No               56.9 No         Yes        IEEE          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0534        6.4 Yes             44.78 No         No                       
+21311A0535        6.8 Yes             58.53 No         No                       
+21311A0536        9.3 No              84.48 No         No                       
+21311A0537        8.3 No              84.48 No         Yes        ECA           
+21311A0538        8.5 No              58.62 No         Yes        BACHPNPYAR    
+21311A0539        8.2 No              63.68 No         Yes        IEEE          
+21311A0540        8.4 No              48.28 No         Yes        ARTS CLUB     
+21311A0541        7.8 No              60.34 No         No                       
+21311A0542        7.4 No              58.38 No         No                       
+21311A0543        6.4 No              68.08 No         No                       
+21311A0544        7.8 No              60.34 No         No                       
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0545        7.1 No                 50 No         No                       
+21311A0546        6.4 No              67.38 No         Yes        IEEE          
+21311A0547        7.3 Yes             67.34 No         No                       
+21311A0548        7.7 No              25.44 No         Yes        SE            
+21311A0549        7.8 No              68.97 No         Yes        SCF           
+21311A0550        7.1 No              55.17 No         Yes        ARTS CLUB     
+21311A0551        6.8 Yes             31.03 No         Yes        SE            
+21311A0552        6.9 Yes             51.04 No         No                       
+21311A0553        7.2 Yes             68.97 No         Yes        SE            
+21311A0554        7.6 No                 50 No         Yes        SE            
+21311A0555          7 No              32.45 No         Yes        ARTS CLUB     
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0556        7.4 No              27.94 No         Yes        SE            
+21311A0557        6.1 Yes             31.07 No         No                       
+21311A0558        6.4 Yes             62.07 No         No                       
+21311A0559        5.4 Yes             25.83 Yes        No                       
+21311A0560        6.4 Yes             29.43 Yes        No                       
+21311A0561        6.8 No              50.03 No         Yes        SE            
+21311A0562        9.1 No              55.15 No         No                       
+21311A0563        6.1 Yes             41.56 No         No                       
+21311A0564        7.5 No              39.66 No         Yes        null          
+21311A0565        5.5 Yes             24.12 No         No         null          
+22315A0501        6.5 Yes             54.65 No         Yes        SDC           
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+22315A0502        6.7 Yes             74.42 No         Yes        SDC           
+22315A0503        7.7 No              67.76 No         No         NULL          
+22315A0504        8.4 No              89.66 No         No         NULL          
+22315A0505        7.9 No              77.76 No         No         NULL          
+21861A0519        7.9 No              37.96 No         No         NULL          
+21861A0555        6.9 Yes             48.34 No         Yes        SPC           
+21861A0551        6.2 Yes             27.33 No         Yes        ISTE          
+
+73 rows selected.
+
+SQL> select * from cse;
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0501      S.Niteesh            CSE   M             19                     
+21311A0502      P.Varshith           CSE   M             19                     
+21311A0503      A.ShivaRam           CSE   M             20                     
+21311A0504      Sk.Khasim            CSE   M             19                     
+21311A0505      P.Saikrishna         CSE   M             21                     
+21311A0506      G.Venkat Aditya      CSE   M             19                     
+21311A0507      T.Sai Deekshith      CSE   M             19                     
+21311A0508      P.Rajeswari          CSE   F             19                     
+21311A0509      P.Shashank           CSE   M             19                     
+21311A0510      A.Vikas              CSE   M             20                     
+21311A0511      V.Nikelsh            CSE   M             22                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0512      A.Jithendhar         CSE   M             20                     
+21311A0513      K.Giridhar           CSE   M             19                     
+21311A0514      L.Akhila             CSE   F             21                     
+21311A0515      K.Prakash            CSE   M             21                     
+21311A0516      A.Madhavi            CSE   F             20                     
+21311A0517      B.Showarya Akash     CSE   M             21                     
+21311A0518      N.Deepika            CSE   F             19                     
+21311A0519      K.Pranitha           CSE   F             20                     
+21311A0520      S.Shruthi            CSE   F             21                     
+21311A0521      M.Shiva              CSE   F             22                     
+21311A0522      R.Laxmi Priya        CSE   F             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0523      K.Harshini           CSE   F             19                     
+21311A0524      B.Sowmya             CSE   F             20                     
+21311A0525      M.Lokesh             CSE   F             21                     
+21311A0526      R.Umesh              CSE   M             21                     
+21311A0527      M.Rohan Babu         CSE   M             19                     
+21311A0528      P.Siddhu             CSE   M             20                     
+21311A0529      P.Navya Sree         CSE   M             21                     
+21311A0530      C.Sarvendhri         CSE   F             19                     
+21311A0531      P.Praveena           CSE   F             20                     
+21311A0532      G.Rathan Raju        CSE   M             20                     
+21311A0533      Sk.Huda Muskan       CSE   F             21                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0534      Md.Awiz              CSE   M             21                     
+21311A0535      Md.Mahek             CSE   F             20                     
+21311A0536      B.Manjula            CSE   F             21                     
+21311A0537      B.Pooja              CSE   F             21                     
+21311A0538      J.Aaraadhya          CSE   F             19                     
+21311A0539      P.Taruni Neha        CSE   F             19                     
+21311A0540      A.Anvitha            CSE   F             21                     
+21311A0541      V.Dhanush            CSE   M             21                     
+21311A0542      Y.Vibhas             CSE   M             20                     
+21311A0543      S.Meghana            CSE   F             21                     
+21311A0544      O.Shiva Ganesh       CSE   M             22                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0545      R.Ritheesh Reddy     CSE   M             21                     
+21311A0546      T.Aditi              CSE   F             19                     
+21311A0547      G.Sathvik Reddy      CSE   M             21                     
+21311A0548      M.Rishab             CSE   M             20                     
+21311A0549      T.Shivani            CSE   F             21                     
+21311A0550      A.Vyshanvi           CSE   F             20                     
+21311A0551      J.Sai Akshya         CSE   M             19                     
+21311A0552      T.Chandhu            CSE   M             21                     
+21311A0553      K.Jayanth            CSE   M             22                     
+21311A0554      A.Sainath            CSE   M             19                     
+21311A0555      B.Snigdha Reddy      CSE   F             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0556      P.Nithin             CSE   M             22                     
+21311A0557      B.Charkika           CSE   M             23                     
+21311A0558      D.Veekshitha         CSE   F             20                     
+21311A0559      Ch.Abhinay           CSE   M             20                     
+21311A0560      M.Tharun Vibhav      CSE   M             21                     
+21311A0561      P.Tejas              CSE   M             19                     
+21311A0562      K.Vinay              CSE   M             19                     
+21311A0563      P.Aditya Raj         CSE   M             19                     
+21311A0564      V.Gautham            CSE   M             20                     
+21311A0565      P.Mahendhar          CSE   M             21                     
+22315A0501      M.Pavan              CSELE M             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+22315A0502      K.Sanjay             CSELE M             22                     
+22315A0503      R.Navya Sree         CSELE F             20                     
+22315A0504      P.Muralidhar Reddy   CSELE M             20                     
+22315A0505      Y.Jaya Sree          CSELE F             20                     
+21861A0519      O.Vinayak            CSETF M             19                     
+21861A0555      V.Rithika            CSETF F             22                     
+21861A0551      V.Shiva Prasad       CSETF M             21                     
+
+73 rows selected.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0502';
+
+1 row updated.
+
+SQL> select * from edu;
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0501        9.5 No              67.24 No         Yes        ECA           
+21311A0502        8.5 No              60.34 No         No         NULL          
+21311A0503        9.6 No              77.59 No         Yes        SDC           
+21311A0504        8.2 No              67.24 No         Yes        CNC           
+21311A0505        8.2 No              63.67 No         Yes        ECA           
+21311A0506        8.2 Yes             44.83 No         Yes        CDC           
+21311A0507        7.7 No              53.45 No         No                       
+21311A0508        9.4 No              63.79 No         Yes        CNC           
+21311A0509        6.4 No              48.28 No         No                       
+21311A0510        9.2 No              53.48 No         No                       
+21311A0511        8.8 No                 50 No         No                       
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0512          9 No              67.24 No         No                       
+21311A0513        8.6 No              79.34 No         Yes        ECA           
+21311A0514        8.9 No              75.84 No         No                       
+21311A0515        8.7 No              48.28 No         No                       
+21311A0516        9.7 No              58.62 No         Yes        ECA           
+21311A0517        8.4 No               56.9 No         No                       
+21311A0518        9.3 No              70.69 No         No                       
+21311A0519        8.5 No              65.53 No         Yes        DEVONEYS      
+21311A0520        9.5 No              84.48 No         Yes        ECA           
+21311A0521        9.1 No              75.86 No         No                       
+21311A0522        9.6 No              82.76 No         Yes        ECA           
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0523        9.3 No              82.76 No         Yes        ECA           
+21311A0524        9.2 No              70.69 No         No                       
+21311A0525        8.7 No              79.63 No         No                       
+21311A0526        6.7 Yes             29.31 No         No                       
+21311A0527        8.4 No              72.41 No         Yes        CSAC          
+21311A0528        5.5 Yes                 0 Yes        No                       
+21311A0529        8.7 No              29.31 No         Yes        NSS           
+21311A0530        9.3 No              58.63 No         No                       
+21311A0531        9.6 No              55.17 No         Yes        ECA           
+21311A0532        7.6 No              72.63 No         Yes        NSS           
+21311A0533        8.4 No               56.9 No         Yes        IEEE          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0534        6.4 Yes             44.78 No         No                       
+21311A0535        6.8 Yes             58.53 No         No                       
+21311A0536        9.3 No              84.48 No         No                       
+21311A0537        8.3 No              84.48 No         Yes        ECA           
+21311A0538        8.5 No              58.62 No         Yes        BACHPNPYAR    
+21311A0539        8.2 No              63.68 No         Yes        IEEE          
+21311A0540        8.4 No              48.28 No         Yes        ARTS CLUB     
+21311A0541        7.8 No              60.34 No         No                       
+21311A0542        7.4 No              58.38 No         No                       
+21311A0543        6.4 No              68.08 No         No                       
+21311A0544        7.8 No              60.34 No         No                       
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0545        7.1 No                 50 No         No                       
+21311A0546        6.4 No              67.38 No         Yes        IEEE          
+21311A0547        7.3 Yes             67.34 No         No                       
+21311A0548        7.7 No              25.44 No         Yes        SE            
+21311A0549        7.8 No              68.97 No         Yes        SCF           
+21311A0550        7.1 No              55.17 No         Yes        ARTS CLUB     
+21311A0551        6.8 Yes             31.03 No         Yes        SE            
+21311A0552        6.9 Yes             51.04 No         No                       
+21311A0553        7.2 Yes             68.97 No         Yes        SE            
+21311A0554        7.6 No                 50 No         Yes        SE            
+21311A0555          7 No              32.45 No         Yes        ARTS CLUB     
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0556        7.4 No              27.94 No         Yes        SE            
+21311A0557        6.1 Yes             31.07 No         No                       
+21311A0558        6.4 Yes             62.07 No         No                       
+21311A0559        5.4 Yes             25.83 Yes        No                       
+21311A0560        6.4 Yes             29.43 Yes        No                       
+21311A0561        6.8 No              50.03 No         Yes        SE            
+21311A0562        9.1 No              55.15 No         No                       
+21311A0563        6.1 Yes             41.56 No         No                       
+21311A0564        7.5 No              39.66 No         Yes        null          
+21311A0565        5.5 Yes             24.12 No         No         null          
+22315A0501        6.5 Yes             54.65 No         Yes        SDC           
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+22315A0502        6.7 Yes             74.42 No         Yes        SDC           
+22315A0503        7.7 No              67.76 No         No         NULL          
+22315A0504        8.4 No              89.66 No         No         NULL          
+22315A0505        7.9 No              77.76 No         No         NULL          
+21861A0519        7.9 No              37.96 No         No         NULL          
+21861A0555        6.9 Yes             48.34 No         Yes        SPC           
+21861A0551        6.2 Yes             27.33 No         Yes        ISTE          
+
+73 rows selected.
+
+SQL> update edu CNAME='NULL' where sno='21311A0507';
+update edu CNAME='NULL' where sno='21311A0507'
+                *
+ERROR at line 1:
+ORA-00971: missing SET keyword 
+
+
+SQL> update edu set CNAME='NULL' where sno='21311A0507';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0509';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0510';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0511';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0512';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0514';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0515';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0517';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0518';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0521';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0524';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0525';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0526';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0528';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0530';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0534';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0535';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0536';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0541';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0542';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0543';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0544';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0545';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0547';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0552';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0557';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0558';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0559';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0560';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0562';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0563';
+
+1 row updated.
+
+SQL> update edu set CNAME='SE' where sno='21311A0564';
+
+1 row updated.
+
+SQL> update edu set CNAME='NULL' where sno='21311A0565';
+
+1 row updated.
+
+SQL> select * from edu;
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0501        9.5 No              67.24 No         Yes        ECA           
+21311A0502        8.5 No              60.34 No         No         NULL          
+21311A0503        9.6 No              77.59 No         Yes        SDC           
+21311A0504        8.2 No              67.24 No         Yes        CNC           
+21311A0505        8.2 No              63.67 No         Yes        ECA           
+21311A0506        8.2 Yes             44.83 No         Yes        CDC           
+21311A0507        7.7 No              53.45 No         No         NULL          
+21311A0508        9.4 No              63.79 No         Yes        CNC           
+21311A0509        6.4 No              48.28 No         No         NULL          
+21311A0510        9.2 No              53.48 No         No         NULL          
+21311A0511        8.8 No                 50 No         No         NULL          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0512          9 No              67.24 No         No         NULL          
+21311A0513        8.6 No              79.34 No         Yes        ECA           
+21311A0514        8.9 No              75.84 No         No         NULL          
+21311A0515        8.7 No              48.28 No         No         NULL          
+21311A0516        9.7 No              58.62 No         Yes        ECA           
+21311A0517        8.4 No               56.9 No         No         NULL          
+21311A0518        9.3 No              70.69 No         No         NULL          
+21311A0519        8.5 No              65.53 No         Yes        DEVONEYS      
+21311A0520        9.5 No              84.48 No         Yes        ECA           
+21311A0521        9.1 No              75.86 No         No         NULL          
+21311A0522        9.6 No              82.76 No         Yes        ECA           
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0523        9.3 No              82.76 No         Yes        ECA           
+21311A0524        9.2 No              70.69 No         No         NULL          
+21311A0525        8.7 No              79.63 No         No         NULL          
+21311A0526        6.7 Yes             29.31 No         No         NULL          
+21311A0527        8.4 No              72.41 No         Yes        CSAC          
+21311A0528        5.5 Yes                 0 Yes        No         NULL          
+21311A0529        8.7 No              29.31 No         Yes        NSS           
+21311A0530        9.3 No              58.63 No         No         NULL          
+21311A0531        9.6 No              55.17 No         Yes        ECA           
+21311A0532        7.6 No              72.63 No         Yes        NSS           
+21311A0533        8.4 No               56.9 No         Yes        IEEE          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0534        6.4 Yes             44.78 No         No         NULL          
+21311A0535        6.8 Yes             58.53 No         No         NULL          
+21311A0536        9.3 No              84.48 No         No         NULL          
+21311A0537        8.3 No              84.48 No         Yes        ECA           
+21311A0538        8.5 No              58.62 No         Yes        BACHPNPYAR    
+21311A0539        8.2 No              63.68 No         Yes        IEEE          
+21311A0540        8.4 No              48.28 No         Yes        ARTS CLUB     
+21311A0541        7.8 No              60.34 No         No         NULL          
+21311A0542        7.4 No              58.38 No         No         NULL          
+21311A0543        6.4 No              68.08 No         No         NULL          
+21311A0544        7.8 No              60.34 No         No         NULL          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0545        7.1 No                 50 No         No         NULL          
+21311A0546        6.4 No              67.38 No         Yes        IEEE          
+21311A0547        7.3 Yes             67.34 No         No         NULL          
+21311A0548        7.7 No              25.44 No         Yes        SE            
+21311A0549        7.8 No              68.97 No         Yes        SCF           
+21311A0550        7.1 No              55.17 No         Yes        ARTS CLUB     
+21311A0551        6.8 Yes             31.03 No         Yes        SE            
+21311A0552        6.9 Yes             51.04 No         No         NULL          
+21311A0553        7.2 Yes             68.97 No         Yes        SE            
+21311A0554        7.6 No                 50 No         Yes        SE            
+21311A0555          7 No              32.45 No         Yes        ARTS CLUB     
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0556        7.4 No              27.94 No         Yes        SE            
+21311A0557        6.1 Yes             31.07 No         No         NULL          
+21311A0558        6.4 Yes             62.07 No         No         NULL          
+21311A0559        5.4 Yes             25.83 Yes        No         NULL          
+21311A0560        6.4 Yes             29.43 Yes        No         NULL          
+21311A0561        6.8 No              50.03 No         Yes        SE            
+21311A0562        9.1 No              55.15 No         No         NULL          
+21311A0563        6.1 Yes             41.56 No         No         NULL          
+21311A0564        7.5 No              39.66 No         Yes        SE            
+21311A0565        5.5 Yes             24.12 No         No         NULL          
+22315A0501        6.5 Yes             54.65 No         Yes        SDC           
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+22315A0502        6.7 Yes             74.42 No         Yes        SDC           
+22315A0503        7.7 No              67.76 No         No         NULL          
+22315A0504        8.4 No              89.66 No         No         NULL          
+22315A0505        7.9 No              77.76 No         No         NULL          
+21861A0519        7.9 No              37.96 No         No         NULL          
+21861A0555        6.9 Yes             48.34 No         Yes        SPC           
+21861A0551        6.2 Yes             27.33 No         Yes        ISTE          
+
+73 rows selected.
+
+SQL> select * from cse;
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0501      S.Niteesh            CSE   M             19                     
+21311A0502      P.Varshith           CSE   M             19                     
+21311A0503      A.ShivaRam           CSE   M             20                     
+21311A0504      Sk.Khasim            CSE   M             19                     
+21311A0505      P.Saikrishna         CSE   M             21                     
+21311A0506      G.Venkat Aditya      CSE   M             19                     
+21311A0507      T.Sai Deekshith      CSE   M             19                     
+21311A0508      P.Rajeswari          CSE   F             19                     
+21311A0509      P.Shashank           CSE   M             19                     
+21311A0510      A.Vikas              CSE   M             20                     
+21311A0511      V.Nikelsh            CSE   M             22                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0512      A.Jithendhar         CSE   M             20                     
+21311A0513      K.Giridhar           CSE   M             19                     
+21311A0514      L.Akhila             CSE   F             21                     
+21311A0515      K.Prakash            CSE   M             21                     
+21311A0516      A.Madhavi            CSE   F             20                     
+21311A0517      B.Showarya Akash     CSE   M             21                     
+21311A0518      N.Deepika            CSE   F             19                     
+21311A0519      K.Pranitha           CSE   F             20                     
+21311A0520      S.Shruthi            CSE   F             21                     
+21311A0521      M.Shiva              CSE   F             22                     
+21311A0522      R.Laxmi Priya        CSE   F             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0523      K.Harshini           CSE   F             19                     
+21311A0524      B.Sowmya             CSE   F             20                     
+21311A0525      M.Lokesh             CSE   F             21                     
+21311A0526      R.Umesh              CSE   M             21                     
+21311A0527      M.Rohan Babu         CSE   M             19                     
+21311A0528      P.Siddhu             CSE   M             20                     
+21311A0529      P.Navya Sree         CSE   M             21                     
+21311A0530      C.Sarvendhri         CSE   F             19                     
+21311A0531      P.Praveena           CSE   F             20                     
+21311A0532      G.Rathan Raju        CSE   M             20                     
+21311A0533      Sk.Huda Muskan       CSE   F             21                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0534      Md.Awiz              CSE   M             21                     
+21311A0535      Md.Mahek             CSE   F             20                     
+21311A0536      B.Manjula            CSE   F             21                     
+21311A0537      B.Pooja              CSE   F             21                     
+21311A0538      J.Aaraadhya          CSE   F             19                     
+21311A0539      P.Taruni Neha        CSE   F             19                     
+21311A0540      A.Anvitha            CSE   F             21                     
+21311A0541      V.Dhanush            CSE   M             21                     
+21311A0542      Y.Vibhas             CSE   M             20                     
+21311A0543      S.Meghana            CSE   F             21                     
+21311A0544      O.Shiva Ganesh       CSE   M             22                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0545      R.Ritheesh Reddy     CSE   M             21                     
+21311A0546      T.Aditi              CSE   F             19                     
+21311A0547      G.Sathvik Reddy      CSE   M             21                     
+21311A0548      M.Rishab             CSE   M             20                     
+21311A0549      T.Shivani            CSE   F             21                     
+21311A0550      A.Vyshanvi           CSE   F             20                     
+21311A0551      J.Sai Akshya         CSE   M             19                     
+21311A0552      T.Chandhu            CSE   M             21                     
+21311A0553      K.Jayanth            CSE   M             22                     
+21311A0554      A.Sainath            CSE   M             19                     
+21311A0555      B.Snigdha Reddy      CSE   F             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0556      P.Nithin             CSE   M             22                     
+21311A0557      B.Charkika           CSE   M             23                     
+21311A0558      D.Veekshitha         CSE   F             20                     
+21311A0559      Ch.Abhinay           CSE   M             20                     
+21311A0560      M.Tharun Vibhav      CSE   M             21                     
+21311A0561      P.Tejas              CSE   M             19                     
+21311A0562      K.Vinay              CSE   M             19                     
+21311A0563      P.Aditya Raj         CSE   M             19                     
+21311A0564      V.Gautham            CSE   M             20                     
+21311A0565      P.Mahendhar          CSE   M             21                     
+22315A0501      M.Pavan              CSELE M             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+22315A0502      K.Sanjay             CSELE M             22                     
+22315A0503      R.Navya Sree         CSELE F             20                     
+22315A0504      P.Muralidhar Reddy   CSELE M             20                     
+22315A0505      Y.Jaya Sree          CSELE F             20                     
+21861A0519      O.Vinayak            CSETF M             19                     
+21861A0555      V.Rithika            CSETF F             22                     
+21861A0551      V.Shiva Prasad       CSETF M             21                     
+
+73 rows selected.
+
+SQL> spool off;

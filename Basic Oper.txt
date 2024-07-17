@@ -1,0 +1,1722 @@
+SQL> select * from cse;
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0501      S.Niteesh            CSE   M             19                     
+21311A0502      P.Varshith           CSE   M             19                     
+21311A0503      A.ShivaRam           CSE   M             20                     
+21311A0504      Sk.Khasim            CSE   M             19                     
+21311A0505      P.Saikrishna         CSE   M             21                     
+21311A0506      G.Venkat Aditya      CSE   M             19                     
+21311A0507      T.Sai Deekshith      CSE   M             19                     
+21311A0508      P.Rajeswari          CSE   F             19                     
+21311A0509      P.Shashank           CSE   M             19                     
+21311A0510      A.Vikas              CSE   M             20                     
+21311A0511      V.Nikelsh            CSE   M             22                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0512      A.Jithendhar         CSE   M             20                     
+21311A0513      K.Giridhar           CSE   M             19                     
+21311A0514      L.Akhila             CSE   F             21                     
+21311A0515      K.Prakash            CSE   M             21                     
+21311A0516      A.Madhavi            CSE   F             20                     
+21311A0517      B.Showarya Akash     CSE   M             21                     
+21311A0518      N.Deepika            CSE   F             19                     
+21311A0519      K.Pranitha           CSE   F             20                     
+21311A0520      S.Shruthi            CSE   F             21                     
+21311A0521      M.Shiva              CSE   F             22                     
+21311A0522      R.Laxmi Priya        CSE   F             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0523      K.Harshini           CSE   F             19                     
+21311A0524      B.Sowmya             CSE   F             20                     
+21311A0525      M.Lokesh             CSE   F             21                     
+21311A0526      R.Umesh              CSE   M             21                     
+21311A0527      M.Rohan Babu         CSE   M             19                     
+21311A0528      P.Siddhu             CSE   M             20                     
+21311A0529      P.Navya Sree         CSE   M             21                     
+21311A0530      C.Sarvendhri         CSE   F             19                     
+21311A0531      P.Praveena           CSE   F             20                     
+21311A0532      G.Rathan Raju        CSE   M             20                     
+21311A0533      Sk.Huda Muskan       CSE   F             21                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0534      Md.Awiz              CSE   M             21                     
+21311A0535      Md.Mahek             CSE   F             20                     
+21311A0536      B.Manjula            CSE   F             21                     
+21311A0537      B.Pooja              CSE   F             21                     
+21311A0538      J.Aaraadhya          CSE   F             19                     
+21311A0539      P.Taruni Neha        CSE   F             19                     
+21311A0540      A.Anvitha            CSE   F             21                     
+21311A0541      V.Dhanush            CSE   M             21                     
+21311A0542      Y.Vibhas             CSE   M             20                     
+21311A0543      S.Meghana            CSE   F             21                     
+21311A0544      O.Shiva Ganesh       CSE   M             22                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0545      R.Ritheesh Reddy     CSE   M             21                     
+21311A0546      T.Aditi              CSE   F             19                     
+21311A0547      G.Sathvik Reddy      CSE   M             21                     
+21311A0548      M.Rishab             CSE   M             20                     
+21311A0549      T.Shivani            CSE   F             21                     
+21311A0550      A.Vyshanvi           CSE   F             20                     
+21311A0551      J.Sai Akshya         CSE   M             19                     
+21311A0552      T.Chandhu            CSE   M             21                     
+21311A0553      K.Jayanth            CSE   M             22                     
+21311A0554      A.Sainath            CSE   M             19                     
+21311A0555      B.Snigdha Reddy      CSE   F             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0556      P.Nithin             CSE   M             22                     
+21311A0557      B.Charkika           CSE   M             23                     
+21311A0558      D.Veekshitha         CSE   F             20                     
+21311A0559      Ch.Abhinay           CSE   M             20                     
+21311A0560      M.Tharun Vibhav      CSE   M             21                     
+21311A0561      P.Tejas              CSE   M             19                     
+21311A0562      K.Vinay              CSE   M             19                     
+21311A0563      P.Aditya Raj         CSE   M             19                     
+21311A0564      V.Gautham            CSE   M             20                     
+21311A0565      P.Mahendhar          CSE   M             21                     
+22315A0501      M.Pavan              CSELE M             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+22315A0502      K.Sanjay             CSELE M             22                     
+22315A0503      R.Navya Sree         CSELE F             20                     
+22315A0504      P.Muralidhar Reddy   CSELE M             20                     
+22315A0505      Y.Jaya Sree          CSELE F             20                     
+21861A0519      O.Vinayak            CSETF M             19                     
+21861A0555      V.Rithika            CSETF F             22                     
+21861A0551      V.Shiva Prasad       CSETF M             21                     
+
+73 rows selected.
+
+SQL> select * from edu;
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0501        9.5 No              67.24 No         Yes        ECA           
+21311A0502        8.5 No              60.34 No         No         NULL          
+21311A0503        9.6 No              77.59 No         Yes        SDC           
+21311A0504        8.2 No              67.24 No         Yes        CNC           
+21311A0505        8.2 No              63.67 No         Yes        ECA           
+21311A0506        8.2 Yes             44.83 No         Yes        CDC           
+21311A0507        7.7 No              53.45 No         No         NULL          
+21311A0508        9.4 No              63.79 No         Yes        CNC           
+21311A0509        6.4 No              48.28 No         No         NULL          
+21311A0510        9.2 No              53.48 No         No         NULL          
+21311A0511        8.8 No                 50 No         No         NULL          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0512          9 No              67.24 No         No         NULL          
+21311A0513        8.6 No              79.34 No         Yes        ECA           
+21311A0514        8.9 No              75.84 No         No         NULL          
+21311A0515        8.7 No              48.28 No         No         NULL          
+21311A0516        9.7 No              58.62 No         Yes        ECA           
+21311A0517        8.4 No               56.9 No         No         NULL          
+21311A0518        9.3 No              70.69 No         No         NULL          
+21311A0519        8.5 No              65.53 No         Yes        DEVONEYS      
+21311A0520        9.5 No              84.48 No         Yes        ECA           
+21311A0521        9.1 No              75.86 No         No         NULL          
+21311A0522        9.6 No              82.76 No         Yes        ECA           
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0523        9.3 No              82.76 No         Yes        ECA           
+21311A0524        9.2 No              70.69 No         No         NULL          
+21311A0525        8.7 No              79.63 No         No         NULL          
+21311A0526        6.7 Yes             29.31 No         No         NULL          
+21311A0527        8.4 No              72.41 No         Yes        CSAC          
+21311A0528        5.5 Yes                 0 Yes        No         NULL          
+21311A0529        8.7 No              29.31 No         Yes        NSS           
+21311A0530        9.3 No              58.63 No         No         NULL          
+21311A0531        9.6 No              55.17 No         Yes        ECA           
+21311A0532        7.6 No              72.63 No         Yes        NSS           
+21311A0533        8.4 No               56.9 No         Yes        IEEE          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0534        6.4 Yes             44.78 No         No         NULL          
+21311A0535        6.8 Yes             58.53 No         No         NULL          
+21311A0536        9.3 No              84.48 No         No         NULL          
+21311A0537        8.3 No              84.48 No         Yes        ECA           
+21311A0538        8.5 No              58.62 No         Yes        BACHPNPYAR    
+21311A0539        8.2 No              63.68 No         Yes        IEEE          
+21311A0540        8.4 No              48.28 No         Yes        ARTS CLUB     
+21311A0541        7.8 No              60.34 No         No         NULL          
+21311A0542        7.4 No              58.38 No         No         NULL          
+21311A0543        6.4 No              68.08 No         No         NULL          
+21311A0544        7.8 No              60.34 No         No         NULL          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0545        7.1 No                 50 No         No         NULL          
+21311A0546        6.4 No              67.38 No         Yes        IEEE          
+21311A0547        7.3 Yes             67.34 No         No         NULL          
+21311A0548        7.7 No              25.44 No         Yes        SE            
+21311A0549        7.8 No              68.97 No         Yes        SCF           
+21311A0550        7.1 No              55.17 No         Yes        ARTS CLUB     
+21311A0551        6.8 Yes             31.03 No         Yes        SE            
+21311A0552        6.9 Yes             51.04 No         No         NULL          
+21311A0553        7.2 Yes             68.97 No         Yes        SE            
+21311A0554        7.6 No                 50 No         Yes        SE            
+21311A0555          7 No              32.45 No         Yes        ARTS CLUB     
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0556        7.4 No              27.94 No         Yes        SE            
+21311A0557        6.1 Yes             31.07 No         No         NULL          
+21311A0558        6.4 Yes             62.07 No         No         NULL          
+21311A0559        5.4 Yes             25.83 Yes        No         NULL          
+21311A0560        6.4 Yes             29.43 Yes        No         NULL          
+21311A0561        6.8 No              50.03 No         Yes        SE            
+21311A0562        9.1 No              55.15 No         No         NULL          
+21311A0563        6.1 Yes             41.56 No         No         NULL          
+21311A0564        7.5 No              39.66 No         Yes        NULL          
+21311A0565        5.5 Yes             24.12 No         No         NULL          
+22315A0501        6.5 Yes             54.65 No         Yes        SDC           
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+22315A0502        6.7 Yes             74.42 No         Yes        SDC           
+22315A0503        7.7 No              67.76 No         No         NULL          
+22315A0504        8.4 No              89.66 No         No         NULL          
+22315A0505        7.9 No              77.76 No         No         NULL          
+21861A0519        7.9 No              37.96 No         No         NULL          
+21861A0551        6.2 Yes             27.33 No         Yes        ISTE          
+21861A0555        6.9 Yes             48.34 No         Yes        SPC           
+
+73 rows selected.
+
+SQL> update cse set gender='M' where sno='21311A0525';
+
+1 row updated.
+
+SQL> update cse set gender='M' where sno='21311A0521';
+
+1 row updated.
+
+SQL> 
+SQL> select unique cname from edu;
+
+CNAME                                                                           
+----------                                                                      
+NSS                                                                             
+ARTS CLUB                                                                       
+ECA                                                                             
+SDC                                                                             
+CSAC                                                                            
+IEEE                                                                            
+DEVONEYS                                                                        
+CDC                                                                             
+SE                                                                              
+BACHPNPYAR                                                                      
+ISTE                                                                            
+
+CNAME                                                                           
+----------                                                                      
+NULL                                                                            
+CNC                                                                             
+SCF                                                                             
+SPC                                                                             
+
+15 rows selected.
+
+SQL> select unique cgpa from edu;
+
+      CGPA                                                                      
+----------                                                                      
+       7.8                                                                      
+       7.4                                                                      
+       8.2                                                                      
+       7.7                                                                      
+       9.4                                                                      
+       9.2                                                                      
+       9.7                                                                      
+       9.3                                                                      
+       9.1                                                                      
+       6.9                                                                      
+       7.5                                                                      
+
+      CGPA                                                                      
+----------                                                                      
+       6.2                                                                      
+       9.6                                                                      
+       8.8                                                                      
+       7.2                                                                      
+       6.1                                                                      
+       9.5                                                                      
+       8.7                                                                      
+       6.8                                                                      
+       6.5                                                                      
+       8.5                                                                      
+       8.6                                                                      
+
+      CGPA                                                                      
+----------                                                                      
+       8.9                                                                      
+       7.6                                                                      
+       6.4                                                                      
+       8.4                                                                      
+       6.7                                                                      
+       7.1                                                                      
+       7.3                                                                      
+         7                                                                      
+       7.9                                                                      
+         9                                                                      
+       5.5                                                                      
+
+      CGPA                                                                      
+----------                                                                      
+       8.3                                                                      
+       5.4                                                                      
+
+35 rows selected.
+
+SQL> desc cse;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SNO                                       NOT NULL VARCHAR2(15)
+ SNAME                                              VARCHAR2(20)
+ BRANCH                                             VARCHAR2(5)
+ GENDER                                             VARCHAR2(5)
+ AGE                                                NUMBER
+
+SQL> desc edu;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ SNO                                       NOT NULL VARCHAR2(10)
+ CGPA                                               NUMBER(2,1)
+ BACKLOGS                                           VARCHAR2(10)
+ ATTENDANCE                                         NUMBER(10,2)
+ DETAINED                                           VARCHAR2(10)
+ EXTRAACTIVITIES                                    VARCHAR2(10)
+ CNAME                                              VARCHAR2(10)
+
+SQL> select unique sname from cse;
+
+SNAME                                                                           
+--------------------                                                            
+B.Sowmya                                                                        
+M.Lokesh                                                                        
+P.Taruni Neha                                                                   
+A.Anvitha                                                                       
+O.Shiva Ganesh                                                                  
+T.Shivani                                                                       
+R.Navya Sree                                                                    
+P.Saikrishna                                                                    
+A.Vikas                                                                         
+A.Madhavi                                                                       
+P.Navya Sree                                                                    
+
+SNAME                                                                           
+--------------------                                                            
+C.Sarvendhri                                                                    
+Y.Vibhas                                                                        
+A.Vyshanvi                                                                      
+P.Aditya Raj                                                                    
+Sk.Khasim                                                                       
+G.Venkat Aditya                                                                 
+S.Shruthi                                                                       
+M.Shiva                                                                         
+K.Harshini                                                                      
+Md.Mahek                                                                        
+B.Pooja                                                                         
+
+SNAME                                                                           
+--------------------                                                            
+S.Meghana                                                                       
+R.Ritheesh Reddy                                                                
+T.Aditi                                                                         
+B.Charkika                                                                      
+Ch.Abhinay                                                                      
+P.Muralidhar Reddy                                                              
+S.Niteesh                                                                       
+V.Nikelsh                                                                       
+B.Showarya Akash                                                                
+R.Umesh                                                                         
+Md.Awiz                                                                         
+
+SNAME                                                                           
+--------------------                                                            
+B.Manjula                                                                       
+V.Dhanush                                                                       
+J.Sai Akshya                                                                    
+K.Jayanth                                                                       
+A.Sainath                                                                       
+K.Vinay                                                                         
+K.Sanjay                                                                        
+N.Deepika                                                                       
+R.Laxmi Priya                                                                   
+M.Rishab                                                                        
+B.Snigdha Reddy                                                                 
+
+SNAME                                                                           
+--------------------                                                            
+D.Veekshitha                                                                    
+P.Tejas                                                                         
+A.ShivaRam                                                                      
+P.Shashank                                                                      
+K.Giridhar                                                                      
+L.Akhila                                                                        
+M.Rohan Babu                                                                    
+T.Chandhu                                                                       
+P.Nithin                                                                        
+M.Tharun Vibhav                                                                 
+Y.Jaya Sree                                                                     
+
+SNAME                                                                           
+--------------------                                                            
+V.Rithika                                                                       
+V.Shiva Prasad                                                                  
+P.Varshith                                                                      
+P.Rajeswari                                                                     
+A.Jithendhar                                                                    
+K.Pranitha                                                                      
+P.Praveena                                                                      
+G.Rathan Raju                                                                   
+J.Aaraadhya                                                                     
+V.Gautham                                                                       
+P.Mahendhar                                                                     
+
+SNAME                                                                           
+--------------------                                                            
+T.Sai Deekshith                                                                 
+K.Prakash                                                                       
+P.Siddhu                                                                        
+Sk.Huda Muskan                                                                  
+G.Sathvik Reddy                                                                 
+M.Pavan                                                                         
+O.Vinayak                                                                       
+
+73 rows selected.
+
+SQL> select * from cse where attandance >65;
+select * from cse where attandance >65
+                        *
+ERROR at line 1:
+ORA-00904: "ATTANDANCE": invalid identifier 
+
+
+SQL> select * from cse where attendance >65;
+select * from cse where attendance >65
+                        *
+ERROR at line 1:
+ORA-00904: "ATTENDANCE": invalid identifier 
+
+
+SQL> select * from edu where attendance >65;
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0501        9.5 No              67.24 No         Yes        ECA           
+21311A0503        9.6 No              77.59 No         Yes        SDC           
+21311A0504        8.2 No              67.24 No         Yes        CNC           
+21311A0512          9 No              67.24 No         No         NULL          
+21311A0513        8.6 No              79.34 No         Yes        ECA           
+21311A0514        8.9 No              75.84 No         No         NULL          
+21311A0518        9.3 No              70.69 No         No         NULL          
+21311A0519        8.5 No              65.53 No         Yes        DEVONEYS      
+21311A0520        9.5 No              84.48 No         Yes        ECA           
+21311A0521        9.1 No              75.86 No         No         NULL          
+21311A0522        9.6 No              82.76 No         Yes        ECA           
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0523        9.3 No              82.76 No         Yes        ECA           
+21311A0524        9.2 No              70.69 No         No         NULL          
+21311A0525        8.7 No              79.63 No         No         NULL          
+21311A0527        8.4 No              72.41 No         Yes        CSAC          
+21311A0532        7.6 No              72.63 No         Yes        NSS           
+21311A0536        9.3 No              84.48 No         No         NULL          
+21311A0537        8.3 No              84.48 No         Yes        ECA           
+21311A0543        6.4 No              68.08 No         No         NULL          
+21311A0546        6.4 No              67.38 No         Yes        IEEE          
+21311A0547        7.3 Yes             67.34 No         No         NULL          
+21311A0549        7.8 No              68.97 No         Yes        SCF           
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0553        7.2 Yes             68.97 No         Yes        SE            
+22315A0502        6.7 Yes             74.42 No         Yes        SDC           
+22315A0503        7.7 No              67.76 No         No         NULL          
+22315A0504        8.4 No              89.66 No         No         NULL          
+22315A0505        7.9 No              77.76 No         No         NULL          
+
+27 rows selected.
+
+SQL> select * from edu where attendance <=65;
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0502        8.5 No              60.34 No         No         NULL          
+21311A0505        8.2 No              63.67 No         Yes        ECA           
+21311A0506        8.2 Yes             44.83 No         Yes        CDC           
+21311A0507        7.7 No              53.45 No         No         NULL          
+21311A0508        9.4 No              63.79 No         Yes        CNC           
+21311A0509        6.4 No              48.28 No         No         NULL          
+21311A0510        9.2 No              53.48 No         No         NULL          
+21311A0511        8.8 No                 50 No         No         NULL          
+21311A0515        8.7 No              48.28 No         No         NULL          
+21311A0516        9.7 No              58.62 No         Yes        ECA           
+21311A0517        8.4 No               56.9 No         No         NULL          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0526        6.7 Yes             29.31 No         No         NULL          
+21311A0528        5.5 Yes                 0 Yes        No         NULL          
+21311A0529        8.7 No              29.31 No         Yes        NSS           
+21311A0530        9.3 No              58.63 No         No         NULL          
+21311A0531        9.6 No              55.17 No         Yes        ECA           
+21311A0533        8.4 No               56.9 No         Yes        IEEE          
+21311A0534        6.4 Yes             44.78 No         No         NULL          
+21311A0535        6.8 Yes             58.53 No         No         NULL          
+21311A0538        8.5 No              58.62 No         Yes        BACHPNPYAR    
+21311A0539        8.2 No              63.68 No         Yes        IEEE          
+21311A0540        8.4 No              48.28 No         Yes        ARTS CLUB     
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0541        7.8 No              60.34 No         No         NULL          
+21311A0542        7.4 No              58.38 No         No         NULL          
+21311A0544        7.8 No              60.34 No         No         NULL          
+21311A0545        7.1 No                 50 No         No         NULL          
+21311A0548        7.7 No              25.44 No         Yes        SE            
+21311A0550        7.1 No              55.17 No         Yes        ARTS CLUB     
+21311A0551        6.8 Yes             31.03 No         Yes        SE            
+21311A0552        6.9 Yes             51.04 No         No         NULL          
+21311A0554        7.6 No                 50 No         Yes        SE            
+21311A0555          7 No              32.45 No         Yes        ARTS CLUB     
+21311A0556        7.4 No              27.94 No         Yes        SE            
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0557        6.1 Yes             31.07 No         No         NULL          
+21311A0558        6.4 Yes             62.07 No         No         NULL          
+21311A0559        5.4 Yes             25.83 Yes        No         NULL          
+21311A0560        6.4 Yes             29.43 Yes        No         NULL          
+21311A0561        6.8 No              50.03 No         Yes        SE            
+21311A0562        9.1 No              55.15 No         No         NULL          
+21311A0563        6.1 Yes             41.56 No         No         NULL          
+21311A0564        7.5 No              39.66 No         Yes        NULL          
+21311A0565        5.5 Yes             24.12 No         No         NULL          
+22315A0501        6.5 Yes             54.65 No         Yes        SDC           
+21861A0519        7.9 No              37.96 No         No         NULL          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21861A0551        6.2 Yes             27.33 No         Yes        ISTE          
+21861A0555        6.9 Yes             48.34 No         Yes        SPC           
+
+46 rows selected.
+
+SQL> select count(*) from edu where attendance >= 65;
+
+  COUNT(*)                                                                      
+----------                                                                      
+        27                                                                      
+
+SQL> select count * from edu where attendance >= 65;
+select count * from edu where attendance >= 65
+               *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> select count(*) from edu where attendance >= 65;
+
+  COUNT(*)                                                                      
+----------                                                                      
+        27                                                                      
+
+SQL> select max(attendace) from edu;
+select max(attendace) from edu
+           *
+ERROR at line 1:
+ORA-00904: "ATTENDACE": invalid identifier 
+
+
+SQL> select max(attendance) from edu;
+
+MAX(ATTENDANCE)                                                                 
+---------------                                                                 
+          89.66                                                                 
+
+SQL> select sname from cse where=select max(attendance) from edu;
+select sname from cse where=select max(attendance) from edu
+                           *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> select sname from cse where=select sno max(attendance) from edu;
+select sname from cse where=select sno max(attendance) from edu
+                           *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> select sno max(attendance) from edu;
+select sno max(attendance) from edu
+              *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> select sno from edu max(attendance);
+select sno from edu max(attendance)
+                       *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> select sno from edu where=max(attendance);
+select sno from edu where=max(attendance)
+                         *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> +
+SP2-0042: unknown command "+" - rest of line ignored.
+SQL> select * from edu where max(attendance);
+select * from edu where max(attendance)
+                        *
+ERROR at line 1:
+ORA-00934: group function is not allowed here 
+
+
+SQL> 
+SQL> select max(attendance) from edu;
+
+MAX(ATTENDANCE)                                                                 
+---------------                                                                 
+          89.66                                                                 
+
+SQL> select sno from edu where=select max(attendance) from edu;
+select sno from edu where=select max(attendance) from edu
+                         *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> select sno from edu where=(select max(attendance) from edu);
+select sno from edu where=(select max(attendance) from edu)
+                         *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> select sno from edu where attendance=(select max(attendance) from edu);
+
+SNO                                                                             
+----------                                                                      
+22315A0504                                                                      
+
+SQL> select snmae from cse where sno=(select sno from edu where attendance)=(select max(attendance) from edu);
+select snmae from cse where sno=(select sno from edu where attendance)=(select max(attendance) from edu)
+                                                                     *
+ERROR at line 1:
+ORA-00920: invalid relational operator 
+
+
+SQL> select snmae from cse where sno=select sno from edu where attendance=(select max(attendance) from edu);
+select snmae from cse where sno=select sno from edu where attendance=(select max(attendance) from edu)
+                                *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> select snmae from cse where sno=((select sno from edu where attendance=select max(attendance) from edu));
+select snmae from cse where sno=((select sno from edu where attendance=select max(attendance) from edu))
+                                                                       *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> select snmae from cse where sno=select sno from edu where attendance=(select max(attendance) from edu);
+select snmae from cse where sno=select sno from edu where attendance=(select max(attendance) from edu)
+                                *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> select sname from cse where sno=select sno from edu where attendance=(select max(attendance) from edu);
+select sname from cse where sno=select sno from edu where attendance=(select max(attendance) from edu)
+                                *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> select sname from cse where sno=(select sno from edu where attendance=(select max(attendance) from edu));
+
+SNAME                                                                           
+--------------------                                                            
+P.Muralidhar Reddy                                                              
+
+SQL> select avg(attendance) from edu;
+
+AVG(ATTENDANCE)                                                                 
+---------------                                                                 
+     56.7864384                                                                 
+
+SQL> 
+SQL> select avg(cgpa) from edu;
+
+ AVG(CGPA)                                                                      
+----------                                                                      
+7.85616438                                                                      
+
+SQL> select avg(age) from edu;
+select avg(age) from edu
+           *
+ERROR at line 1:
+ORA-00904: "AGE": invalid identifier 
+
+
+SQL> select avg(Age) from edu;
+select avg(Age) from edu
+           *
+ERROR at line 1:
+ORA-00904: "AGE": invalid identifier 
+
+
+SQL> select avg(Age) from cse;
+
+  AVG(AGE)                                                                      
+----------                                                                      
+20.2465753                                                                      
+
+SQL> select floor(avg(Age)) from cse;
+
+FLOOR(AVG(AGE))                                                                 
+---------------                                                                 
+             20                                                                 
+
+SQL> select count(detained) from edu;
+
+COUNT(DETAINED)                                                                 
+---------------                                                                 
+             73                                                                 
+
+SQL> select count(*) from edu where detained='yes';
+
+  COUNT(*)                                                                      
+----------                                                                      
+         0                                                                      
+
+SQL> select count(*) from edu where detained='Yes';
+
+  COUNT(*)                                                                      
+----------                                                                      
+         3                                                                      
+
+SQL> select from edu where detained='Yes';
+select from edu where detained='Yes'
+       *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> select * from edu where detained='Yes';
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0528        5.5 Yes                 0 Yes        No         NULL          
+21311A0559        5.4 Yes             25.83 Yes        No         NULL          
+21311A0560        6.4 Yes             29.43 Yes        No         NULL          
+
+SQL> select * from edu where detained!='Yes';
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0501        9.5 No              67.24 No         Yes        ECA           
+21311A0502        8.5 No              60.34 No         No         NULL          
+21311A0503        9.6 No              77.59 No         Yes        SDC           
+21311A0504        8.2 No              67.24 No         Yes        CNC           
+21311A0505        8.2 No              63.67 No         Yes        ECA           
+21311A0506        8.2 Yes             44.83 No         Yes        CDC           
+21311A0507        7.7 No              53.45 No         No         NULL          
+21311A0508        9.4 No              63.79 No         Yes        CNC           
+21311A0509        6.4 No              48.28 No         No         NULL          
+21311A0510        9.2 No              53.48 No         No         NULL          
+21311A0511        8.8 No                 50 No         No         NULL          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0512          9 No              67.24 No         No         NULL          
+21311A0513        8.6 No              79.34 No         Yes        ECA           
+21311A0514        8.9 No              75.84 No         No         NULL          
+21311A0515        8.7 No              48.28 No         No         NULL          
+21311A0516        9.7 No              58.62 No         Yes        ECA           
+21311A0517        8.4 No               56.9 No         No         NULL          
+21311A0518        9.3 No              70.69 No         No         NULL          
+21311A0519        8.5 No              65.53 No         Yes        DEVONEYS      
+21311A0520        9.5 No              84.48 No         Yes        ECA           
+21311A0521        9.1 No              75.86 No         No         NULL          
+21311A0522        9.6 No              82.76 No         Yes        ECA           
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0523        9.3 No              82.76 No         Yes        ECA           
+21311A0524        9.2 No              70.69 No         No         NULL          
+21311A0525        8.7 No              79.63 No         No         NULL          
+21311A0526        6.7 Yes             29.31 No         No         NULL          
+21311A0527        8.4 No              72.41 No         Yes        CSAC          
+21311A0529        8.7 No              29.31 No         Yes        NSS           
+21311A0530        9.3 No              58.63 No         No         NULL          
+21311A0531        9.6 No              55.17 No         Yes        ECA           
+21311A0532        7.6 No              72.63 No         Yes        NSS           
+21311A0533        8.4 No               56.9 No         Yes        IEEE          
+21311A0534        6.4 Yes             44.78 No         No         NULL          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0535        6.8 Yes             58.53 No         No         NULL          
+21311A0536        9.3 No              84.48 No         No         NULL          
+21311A0537        8.3 No              84.48 No         Yes        ECA           
+21311A0538        8.5 No              58.62 No         Yes        BACHPNPYAR    
+21311A0539        8.2 No              63.68 No         Yes        IEEE          
+21311A0540        8.4 No              48.28 No         Yes        ARTS CLUB     
+21311A0541        7.8 No              60.34 No         No         NULL          
+21311A0542        7.4 No              58.38 No         No         NULL          
+21311A0543        6.4 No              68.08 No         No         NULL          
+21311A0544        7.8 No              60.34 No         No         NULL          
+21311A0545        7.1 No                 50 No         No         NULL          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0546        6.4 No              67.38 No         Yes        IEEE          
+21311A0547        7.3 Yes             67.34 No         No         NULL          
+21311A0548        7.7 No              25.44 No         Yes        SE            
+21311A0549        7.8 No              68.97 No         Yes        SCF           
+21311A0550        7.1 No              55.17 No         Yes        ARTS CLUB     
+21311A0551        6.8 Yes             31.03 No         Yes        SE            
+21311A0552        6.9 Yes             51.04 No         No         NULL          
+21311A0553        7.2 Yes             68.97 No         Yes        SE            
+21311A0554        7.6 No                 50 No         Yes        SE            
+21311A0555          7 No              32.45 No         Yes        ARTS CLUB     
+21311A0556        7.4 No              27.94 No         Yes        SE            
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+21311A0557        6.1 Yes             31.07 No         No         NULL          
+21311A0558        6.4 Yes             62.07 No         No         NULL          
+21311A0561        6.8 No              50.03 No         Yes        SE            
+21311A0562        9.1 No              55.15 No         No         NULL          
+21311A0563        6.1 Yes             41.56 No         No         NULL          
+21311A0564        7.5 No              39.66 No         Yes        NULL          
+21311A0565        5.5 Yes             24.12 No         No         NULL          
+22315A0501        6.5 Yes             54.65 No         Yes        SDC           
+22315A0502        6.7 Yes             74.42 No         Yes        SDC           
+22315A0503        7.7 No              67.76 No         No         NULL          
+22315A0504        8.4 No              89.66 No         No         NULL          
+
+SNO              CGPA BACKLOGS   ATTENDANCE DETAINED   EXTRAACTIV CNAME         
+---------- ---------- ---------- ---------- ---------- ---------- ----------    
+22315A0505        7.9 No              77.76 No         No         NULL          
+21861A0519        7.9 No              37.96 No         No         NULL          
+21861A0551        6.2 Yes             27.33 No         Yes        ISTE          
+21861A0555        6.9 Yes             48.34 No         Yes        SPC           
+
+70 rows selected.
+
+SQL> select cgpa from edu where attendance > 75;
+
+      CGPA                                                                      
+----------                                                                      
+       9.6                                                                      
+       8.6                                                                      
+       8.9                                                                      
+       9.5                                                                      
+       9.1                                                                      
+       9.6                                                                      
+       9.3                                                                      
+       8.7                                                                      
+       9.3                                                                      
+       8.3                                                                      
+       8.4                                                                      
+
+      CGPA                                                                      
+----------                                                                      
+       7.9                                                                      
+
+12 rows selected.
+
+SQL> select * from edu where sname like '_i%';
+select * from edu where sname like '_i%'
+                        *
+ERROR at line 1:
+ORA-00904: "SNAME": invalid identifier 
+
+
+SQL> select * from cse where sname like '_i%';
+
+no rows selected
+
+SQL> select * from cse where sname like '%_i%';
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0501      S.Niteesh            CSE   M             19                     
+21311A0502      P.Varshith           CSE   M             19                     
+21311A0503      A.ShivaRam           CSE   M             20                     
+21311A0504      Sk.Khasim            CSE   M             19                     
+21311A0505      P.Saikrishna         CSE   M             21                     
+21311A0506      G.Venkat Aditya      CSE   M             19                     
+21311A0507      T.Sai Deekshith      CSE   M             19                     
+21311A0508      P.Rajeswari          CSE   F             19                     
+21311A0510      A.Vikas              CSE   M             20                     
+21311A0511      V.Nikelsh            CSE   M             22                     
+21311A0512      A.Jithendhar         CSE   M             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0513      K.Giridhar           CSE   M             19                     
+21311A0514      L.Akhila             CSE   F             21                     
+21311A0516      A.Madhavi            CSE   F             20                     
+21311A0518      N.Deepika            CSE   F             19                     
+21311A0519      K.Pranitha           CSE   F             20                     
+21311A0520      S.Shruthi            CSE   F             21                     
+21311A0521      M.Shiva              CSE   M             22                     
+21311A0522      R.Laxmi Priya        CSE   F             20                     
+21311A0523      K.Harshini           CSE   F             19                     
+21311A0528      P.Siddhu             CSE   M             20                     
+21311A0530      C.Sarvendhri         CSE   F             19                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0534      Md.Awiz              CSE   M             21                     
+21311A0539      P.Taruni Neha        CSE   F             19                     
+21311A0540      A.Anvitha            CSE   F             21                     
+21311A0542      Y.Vibhas             CSE   M             20                     
+21311A0544      O.Shiva Ganesh       CSE   M             22                     
+21311A0545      R.Ritheesh Reddy     CSE   M             21                     
+21311A0546      T.Aditi              CSE   F             19                     
+21311A0547      G.Sathvik Reddy      CSE   M             21                     
+21311A0548      M.Rishab             CSE   M             20                     
+21311A0549      T.Shivani            CSE   F             21                     
+21311A0550      A.Vyshanvi           CSE   F             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0551      J.Sai Akshya         CSE   M             19                     
+21311A0554      A.Sainath            CSE   M             19                     
+21311A0555      B.Snigdha Reddy      CSE   F             20                     
+21311A0556      P.Nithin             CSE   M             22                     
+21311A0557      B.Charkika           CSE   M             23                     
+21311A0558      D.Veekshitha         CSE   F             20                     
+21311A0559      Ch.Abhinay           CSE   M             20                     
+21311A0560      M.Tharun Vibhav      CSE   M             21                     
+21311A0562      K.Vinay              CSE   M             19                     
+21311A0563      P.Aditya Raj         CSE   M             19                     
+22315A0504      P.Muralidhar Reddy   CSELE M             20                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21861A0519      O.Vinayak            CSETF M             19                     
+21861A0555      V.Rithika            CSETF F             22                     
+21861A0551      V.Shiva Prasad       CSETF M             21                     
+
+47 rows selected.
+
+SQL> select * from cse where sname like '%_i';
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0508      P.Rajeswari          CSE   F             19                     
+21311A0516      A.Madhavi            CSE   F             20                     
+21311A0520      S.Shruthi            CSE   F             21                     
+21311A0523      K.Harshini           CSE   F             19                     
+21311A0530      C.Sarvendhri         CSE   F             19                     
+21311A0546      T.Aditi              CSE   F             19                     
+21311A0549      T.Shivani            CSE   F             21                     
+21311A0550      A.Vyshanvi           CSE   F             20                     
+
+8 rows selected.
+
+SQL> select * from cse where sname like '_i';
+
+no rows selected
+
+SQL> select * from cse where sname like '_i%';
+
+no rows selected
+
+SQL> select * from cse where sname like '___i%';
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0501      S.Niteesh            CSE   M             19                     
+21311A0510      A.Vikas              CSE   M             20                     
+21311A0511      V.Nikelsh            CSE   M             22                     
+21311A0512      A.Jithendhar         CSE   M             20                     
+21311A0513      K.Giridhar           CSE   M             19                     
+21311A0528      P.Siddhu             CSE   M             20                     
+21311A0542      Y.Vibhas             CSE   M             20                     
+21311A0545      R.Ritheesh Reddy     CSE   M             21                     
+21311A0548      M.Rishab             CSE   M             20                     
+21311A0556      P.Nithin             CSE   M             22                     
+21311A0562      K.Vinay              CSE   M             19                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21861A0519      O.Vinayak            CSETF M             19                     
+21861A0555      V.Rithika            CSETF F             22                     
+
+13 rows selected.
+
+SQL> select * from cse where sname like '%r';
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0512      A.Jithendhar         CSE   M             20                     
+21311A0513      K.Giridhar           CSE   M             19                     
+21311A0565      P.Mahendhar          CSE   M             21                     
+
+SQL> select * from cse where sname like '_%r';
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0512      A.Jithendhar         CSE   M             20                     
+21311A0513      K.Giridhar           CSE   M             19                     
+21311A0565      P.Mahendhar          CSE   M             21                     
+
+SQL> select * from cse where sname like '%d%';
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0506      G.Venkat Aditya      CSE   M             19                     
+21311A0512      A.Jithendhar         CSE   M             20                     
+21311A0513      K.Giridhar           CSE   M             19                     
+21311A0516      A.Madhavi            CSE   F             20                     
+21311A0528      P.Siddhu             CSE   M             20                     
+21311A0530      C.Sarvendhri         CSE   F             19                     
+21311A0533      Sk.Huda Muskan       CSE   F             21                     
+21311A0534      Md.Awiz              CSE   M             21                     
+21311A0535      Md.Mahek             CSE   F             20                     
+21311A0538      J.Aaraadhya          CSE   F             19                     
+21311A0545      R.Ritheesh Reddy     CSE   M             21                     
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0546      T.Aditi              CSE   F             19                     
+21311A0547      G.Sathvik Reddy      CSE   M             21                     
+21311A0552      T.Chandhu            CSE   M             21                     
+21311A0555      B.Snigdha Reddy      CSE   F             20                     
+21311A0563      P.Aditya Raj         CSE   M             19                     
+21311A0565      P.Mahendhar          CSE   M             21                     
+22315A0504      P.Muralidhar Reddy   CSELE M             20                     
+21861A0551      V.Shiva Prasad       CSETF M             21                     
+
+19 rows selected.
+
+SQL> select * from cse where sname like '___i%r';
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0512      A.Jithendhar         CSE   M             20                     
+21311A0513      K.Giridhar           CSE   M             19                     
+
+SQL> select * from cse where sname like '%d%r';
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0512      A.Jithendhar         CSE   M             20                     
+21311A0513      K.Giridhar           CSE   M             19                     
+21311A0565      P.Mahendhar          CSE   M             21                     
+
+SQL> select * from cse where sname like 'k%d%r';
+
+no rows selected
+
+SQL> select * from cse where sname like 'K%d%r';
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0513      K.Giridhar           CSE   M             19                     
+
+SQL> select * from cse where sname like 'K%__i%d%r';
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0513      K.Giridhar           CSE   M             19                     
+
+SQL> select * from cse where sname like 'K__i%d%r';
+
+SNO             SNAME                BRANC GENDE        AGE                     
+--------------- -------------------- ----- ----- ----------                     
+21311A0513      K.Giridhar           CSE   M             19                     
+
+SQL> select substr(sname,3) from dual;
+select substr(sname,3) from dual
+              *
+ERROR at line 1:
+ORA-00904: "SNAME": invalid identifier 
+
+
+SQL> select substr(sname,3) from cse;
+
+SUBSTR(SNAME,3)                                                                 
+------------------                                                              
+Niteesh                                                                         
+Varshith                                                                        
+ShivaRam                                                                        
+.Khasim                                                                         
+Saikrishna                                                                      
+Venkat Aditya                                                                   
+Sai Deekshith                                                                   
+Rajeswari                                                                       
+Shashank                                                                        
+Vikas                                                                           
+Nikelsh                                                                         
+
+SUBSTR(SNAME,3)                                                                 
+------------------                                                              
+Jithendhar                                                                      
+Giridhar                                                                        
+Akhila                                                                          
+Prakash                                                                         
+Madhavi                                                                         
+Showarya Akash                                                                  
+Deepika                                                                         
+Pranitha                                                                        
+Shruthi                                                                         
+Shiva                                                                           
+Laxmi Priya                                                                     
+
+SUBSTR(SNAME,3)                                                                 
+------------------                                                              
+Harshini                                                                        
+Sowmya                                                                          
+Lokesh                                                                          
+Umesh                                                                           
+Rohan Babu                                                                      
+Siddhu                                                                          
+Navya Sree                                                                      
+Sarvendhri                                                                      
+Praveena                                                                        
+Rathan Raju                                                                     
+.Huda Muskan                                                                    
+
+SUBSTR(SNAME,3)                                                                 
+------------------                                                              
+.Awiz                                                                           
+.Mahek                                                                          
+Manjula                                                                         
+Pooja                                                                           
+Aaraadhya                                                                       
+Taruni Neha                                                                     
+Anvitha                                                                         
+Dhanush                                                                         
+Vibhas                                                                          
+Meghana                                                                         
+Shiva Ganesh                                                                    
+
+SUBSTR(SNAME,3)                                                                 
+------------------                                                              
+Ritheesh Reddy                                                                  
+Aditi                                                                           
+Sathvik Reddy                                                                   
+Rishab                                                                          
+Shivani                                                                         
+Vyshanvi                                                                        
+Sai Akshya                                                                      
+Chandhu                                                                         
+Jayanth                                                                         
+Sainath                                                                         
+Snigdha Reddy                                                                   
+
+SUBSTR(SNAME,3)                                                                 
+------------------                                                              
+Nithin                                                                          
+Charkika                                                                        
+Veekshitha                                                                      
+.Abhinay                                                                        
+Tharun Vibhav                                                                   
+Tejas                                                                           
+Vinay                                                                           
+Aditya Raj                                                                      
+Gautham                                                                         
+Mahendhar                                                                       
+Pavan                                                                           
+
+SUBSTR(SNAME,3)                                                                 
+------------------                                                              
+Sanjay                                                                          
+Navya Sree                                                                      
+Muralidhar Reddy                                                                
+Jaya Sree                                                                       
+Vinayak                                                                         
+Rithika                                                                         
+Shiva Prasad                                                                    
+
+73 rows selected.
+
+SQL> select * from edu order by desc;
+select * from edu order by desc
+                           *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> select attendance form edu order by attendance desc;
+select attendance form edu order by attendance desc
+                       *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> select attendance from edu order by attendance desc;
+
+ATTENDANCE                                                                      
+----------                                                                      
+     89.66                                                                      
+     84.48                                                                      
+     84.48                                                                      
+     84.48                                                                      
+     82.76                                                                      
+     82.76                                                                      
+     79.63                                                                      
+     79.34                                                                      
+     77.76                                                                      
+     77.59                                                                      
+     75.86                                                                      
+
+ATTENDANCE                                                                      
+----------                                                                      
+     75.84                                                                      
+     74.42                                                                      
+     72.63                                                                      
+     72.41                                                                      
+     70.69                                                                      
+     70.69                                                                      
+     68.97                                                                      
+     68.97                                                                      
+     68.08                                                                      
+     67.76                                                                      
+     67.38                                                                      
+
+ATTENDANCE                                                                      
+----------                                                                      
+     67.34                                                                      
+     67.24                                                                      
+     67.24                                                                      
+     67.24                                                                      
+     65.53                                                                      
+     63.79                                                                      
+     63.68                                                                      
+     63.67                                                                      
+     62.07                                                                      
+     60.34                                                                      
+     60.34                                                                      
+
+ATTENDANCE                                                                      
+----------                                                                      
+     60.34                                                                      
+     58.63                                                                      
+     58.62                                                                      
+     58.62                                                                      
+     58.53                                                                      
+     58.38                                                                      
+      56.9                                                                      
+      56.9                                                                      
+     55.17                                                                      
+     55.17                                                                      
+     55.15                                                                      
+
+ATTENDANCE                                                                      
+----------                                                                      
+     54.65                                                                      
+     53.48                                                                      
+     53.45                                                                      
+     51.04                                                                      
+     50.03                                                                      
+        50                                                                      
+        50                                                                      
+        50                                                                      
+     48.34                                                                      
+     48.28                                                                      
+     48.28                                                                      
+
+ATTENDANCE                                                                      
+----------                                                                      
+     48.28                                                                      
+     44.83                                                                      
+     44.78                                                                      
+     41.56                                                                      
+     39.66                                                                      
+     37.96                                                                      
+     32.45                                                                      
+     31.07                                                                      
+     31.03                                                                      
+     29.43                                                                      
+     29.31                                                                      
+
+ATTENDANCE                                                                      
+----------                                                                      
+     29.31                                                                      
+     27.94                                                                      
+     27.33                                                                      
+     25.83                                                                      
+     25.44                                                                      
+     24.12                                                                      
+         0                                                                      
+
+73 rows selected.
+
+SQL> select attendance from edu order by attendance aes;
+select attendance from edu order by attendance aes
+                                               *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> select attendance from edu order by attendance aesc;
+select attendance from edu order by attendance aesc
+                                               *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> select attendance from edu order by attendance asc;
+
+ATTENDANCE                                                                      
+----------                                                                      
+         0                                                                      
+     24.12                                                                      
+     25.44                                                                      
+     25.83                                                                      
+     27.33                                                                      
+     27.94                                                                      
+     29.31                                                                      
+     29.31                                                                      
+     29.43                                                                      
+     31.03                                                                      
+     31.07                                                                      
+
+ATTENDANCE                                                                      
+----------                                                                      
+     32.45                                                                      
+     37.96                                                                      
+     39.66                                                                      
+     41.56                                                                      
+     44.78                                                                      
+     44.83                                                                      
+     48.28                                                                      
+     48.28                                                                      
+     48.28                                                                      
+     48.34                                                                      
+        50                                                                      
+
+ATTENDANCE                                                                      
+----------                                                                      
+        50                                                                      
+        50                                                                      
+     50.03                                                                      
+     51.04                                                                      
+     53.45                                                                      
+     53.48                                                                      
+     54.65                                                                      
+     55.15                                                                      
+     55.17                                                                      
+     55.17                                                                      
+      56.9                                                                      
+
+ATTENDANCE                                                                      
+----------                                                                      
+      56.9                                                                      
+     58.38                                                                      
+     58.53                                                                      
+     58.62                                                                      
+     58.62                                                                      
+     58.63                                                                      
+     60.34                                                                      
+     60.34                                                                      
+     60.34                                                                      
+     62.07                                                                      
+     63.67                                                                      
+
+ATTENDANCE                                                                      
+----------                                                                      
+     63.68                                                                      
+     63.79                                                                      
+     65.53                                                                      
+     67.24                                                                      
+     67.24                                                                      
+     67.24                                                                      
+     67.34                                                                      
+     67.38                                                                      
+     67.76                                                                      
+     68.08                                                                      
+     68.97                                                                      
+
+ATTENDANCE                                                                      
+----------                                                                      
+     68.97                                                                      
+     70.69                                                                      
+     70.69                                                                      
+     72.41                                                                      
+     72.63                                                                      
+     74.42                                                                      
+     75.84                                                                      
+     75.86                                                                      
+     77.59                                                                      
+     77.76                                                                      
+     79.34                                                                      
+
+ATTENDANCE                                                                      
+----------                                                                      
+     79.63                                                                      
+     82.76                                                                      
+     82.76                                                                      
+     84.48                                                                      
+     84.48                                                                      
+     84.48                                                                      
+     89.66                                                                      
+
+73 rows selected.
+
+SQL> select count(*) backlogs from edu;
+
+  BACKLOGS                                                                      
+----------                                                                      
+        73                                                                      
+
+SQL> select count(*) backlogs from edu where backlogs='Yes';
+
+  BACKLOGS                                                                      
+----------                                                                      
+        19                                                                      
+
+SQL> select count(*) backlogs from edu where cname='NULL';
+
+  BACKLOGS                                                                      
+----------                                                                      
+        38                                                                      
+
+SQL> select count(*) cname from edu where cname='NULL';
+
+     CNAME                                                                      
+----------                                                                      
+        38                                                                      
+
+SQL> select rtrim(sname,'dhar') from cse;
+
+RTRIM(SNAME,'DHAR')                                                             
+--------------------                                                            
+S.Nitees                                                                        
+P.Varshit                                                                       
+A.ShivaRam                                                                      
+Sk.Khasim                                                                       
+P.Saikrishn                                                                     
+G.Venkat Adity                                                                  
+T.Sai Deekshit                                                                  
+P.Rajeswari                                                                     
+P.Shashank                                                                      
+A.Vikas                                                                         
+V.Nikels                                                                        
+
+RTRIM(SNAME,'DHAR')                                                             
+--------------------                                                            
+A.Jithen                                                                        
+K.Giri                                                                          
+L.Akhil                                                                         
+K.Prakas                                                                        
+A.Madhavi                                                                       
+B.Showarya Akas                                                                 
+N.Deepik                                                                        
+K.Pranit                                                                        
+S.Shruthi                                                                       
+M.Shiv                                                                          
+R.Laxmi Priy                                                                    
+
+RTRIM(SNAME,'DHAR')                                                             
+--------------------                                                            
+K.Harshini                                                                      
+B.Sowmy                                                                         
+M.Lokes                                                                         
+R.Umes                                                                          
+M.Rohan Babu                                                                    
+P.Siddhu                                                                        
+P.Navya Sree                                                                    
+C.Sarvendhri                                                                    
+P.Praveen                                                                       
+G.Rathan Raju                                                                   
+Sk.Huda Muskan                                                                  
+
+RTRIM(SNAME,'DHAR')                                                             
+--------------------                                                            
+Md.Awiz                                                                         
+Md.Mahek                                                                        
+B.Manjul                                                                        
+B.Pooj                                                                          
+J.Aaraadhy                                                                      
+P.Taruni Ne                                                                     
+A.Anvit                                                                         
+V.Dhanus                                                                        
+Y.Vibhas                                                                        
+S.Meghan                                                                        
+O.Shiva Ganes                                                                   
+
+RTRIM(SNAME,'DHAR')                                                             
+--------------------                                                            
+R.Ritheesh Reddy                                                                
+T.Aditi                                                                         
+G.Sathvik Reddy                                                                 
+M.Rishab                                                                        
+T.Shivani                                                                       
+A.Vyshanvi                                                                      
+J.Sai Akshy                                                                     
+T.Chandhu                                                                       
+K.Jayant                                                                        
+A.Sainat                                                                        
+B.Snigdha Reddy                                                                 
+
+RTRIM(SNAME,'DHAR')                                                             
+--------------------                                                            
+P.Nithin                                                                        
+B.Charkik                                                                       
+D.Veekshit                                                                      
+Ch.Abhinay                                                                      
+M.Tharun Vibhav                                                                 
+P.Tejas                                                                         
+K.Vinay                                                                         
+P.Aditya Raj                                                                    
+V.Gautham                                                                       
+P.Mahen                                                                         
+M.Pavan                                                                         
+
+RTRIM(SNAME,'DHAR')                                                             
+--------------------                                                            
+K.Sanjay                                                                        
+R.Navya Sree                                                                    
+P.Muralidhar Reddy                                                              
+Y.Jaya Sree                                                                     
+O.Vinayak                                                                       
+V.Rithik                                                                        
+V.Shiva Pras                                                                    
+
+73 rows selected.
+
+SQL> select max(cgpa) from edu;
+
+ MAX(CGPA)                                                                      
+----------                                                                      
+       9.7                                                                      
+
+SQL> select sname from cse where sno=(select sno from edu where cgpa=(select max(cgpa) from edu));
+
+SNAME                                                                           
+--------------------                                                            
+A.Madhavi                                                                       
+
+SQL> select max(cgpa) from edu where cgpa!=select max(cgpa) from edu;
+select max(cgpa) from edu where cgpa!=select max(cgpa) from edu
+                                      *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> select max(cgpa) from edu where cgpa!=(select max(cgpa) from edu);
+
+ MAX(CGPA)                                                                      
+----------                                                                      
+       9.6                                                                      
+
+SQL> select ascii(a) from dual;
+select ascii(a) from dual
+             *
+ERROR at line 1:
+ORA-00904: "A": invalid identifier 
+
+
+SQL> select ascii('K.Giridhar') from dual;
+
+ASCII('K.GIRIDHAR')                                                             
+-------------------                                                             
+                 75                                                             
+
+SQL> select ascii('K.Giridhar') from cse;
+
+ASCII('K.GIRIDHAR')                                                             
+-------------------                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+
+ASCII('K.GIRIDHAR')                                                             
+-------------------                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+
+ASCII('K.GIRIDHAR')                                                             
+-------------------                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+
+ASCII('K.GIRIDHAR')                                                             
+-------------------                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+
+ASCII('K.GIRIDHAR')                                                             
+-------------------                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+
+ASCII('K.GIRIDHAR')                                                             
+-------------------                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+
+ASCII('K.GIRIDHAR')                                                             
+-------------------                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+                 75                                                             
+
+73 rows selected.
+
+SQL> select count(*) from edu where cgpa between 7.5 and 9.7;
+
+  COUNT(*)                                                                      
+----------                                                                      
+        46                                                                      
+
+SQL> select sno from edu where cgpa between 7.5 and 9.7;
+
+SNO                                                                             
+----------                                                                      
+21311A0501                                                                      
+21311A0502                                                                      
+21311A0503                                                                      
+21311A0504                                                                      
+21311A0505                                                                      
+21311A0506                                                                      
+21311A0507                                                                      
+21311A0508                                                                      
+21311A0510                                                                      
+21311A0511                                                                      
+21311A0512                                                                      
+
+SNO                                                                             
+----------                                                                      
+21311A0513                                                                      
+21311A0514                                                                      
+21311A0515                                                                      
+21311A0516                                                                      
+21311A0517                                                                      
+21311A0518                                                                      
+21311A0519                                                                      
+21311A0520                                                                      
+21311A0521                                                                      
+21311A0522                                                                      
+21311A0523                                                                      
+
+SNO                                                                             
+----------                                                                      
+21311A0524                                                                      
+21311A0525                                                                      
+21311A0527                                                                      
+21311A0529                                                                      
+21311A0530                                                                      
+21311A0531                                                                      
+21311A0532                                                                      
+21311A0533                                                                      
+21311A0536                                                                      
+21311A0537                                                                      
+21311A0538                                                                      
+
+SNO                                                                             
+----------                                                                      
+21311A0539                                                                      
+21311A0540                                                                      
+21311A0541                                                                      
+21311A0544                                                                      
+21311A0548                                                                      
+21311A0549                                                                      
+21311A0554                                                                      
+21311A0562                                                                      
+21311A0564                                                                      
+22315A0503                                                                      
+22315A0504                                                                      
+
+SNO                                                                             
+----------                                                                      
+22315A0505                                                                      
+21861A0519                                                                      
+
+46 rows selected.
+
+SQL> select max(attendance) from edu;select max(attendance) from edu;
+select max(attendance) from edu;select max(attendance) from edu
+                               *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+SQL> spool off;
